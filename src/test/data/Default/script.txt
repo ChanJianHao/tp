@@ -1,521 +1,852 @@
-`Ima omotte mo fushigidakedo Demo nandaka sore wa fushigi janai yōna ki mo shite' `
+Kuro: Hello!
 
-Tonikaku sore wa boku no jinsei ga kawatte shimau yōna koto de
+Shiro: Hello!
 
-Jitsuwa nanihitotsu kawatte inai yōna…
+Aoi: Hello!
 
-Totemo totemo kimyōde keredo doko ni demo aru keiken o shita'
+Kuro: Just a demonstration of a script file that contains bunch of test word
+Aoi: Oh, this is some more demonstration.
 
-`Kono Ikebukuro no machi de'
+Kuro: Hello!
 
-(Mikado ) Aah! Ss- su- su sumi ma- sen…. Haa… kaeritai.
+Shiro: Hello!
 
-(Ryūgamine Mikado narēshon)  `Warawanaide hoshī' Shōgakkō mo chūgakkō mo shūgakuryokō wa kesseki shite Jimoto kara ippo mo deta koto wanaku Hajimete no Tōkyō ni tomadotte iru gojuu-sai no shōnen'
+Aoi: Hello!
 
-`Sore ga boku ryūgamine Mikado da'
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-`Son'na boku ga naze tōbutō jōsen no kaisatsu mae de Me o mawashite iru no ka'
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-`Kono shigatsu kara Higashi ikebukuro ni aru Shiritsu raira gakuen ni Nyūgaku suru koto ni nattakarada' Hensa-chi wa Chū no ue gurai de Kireidashi setsubi mo totono~o teru'
+Aoi: Oh, this is some more demonstration.
 
-`Tte iu yori Shōgakusei kara no shin'yū ni Sasowa reta koto ga ōkī'
+Kuro: Hello!
 
-`Oya ni wa jimoto no kōritsu-kō ni iku yō Hantai sa retakedo Tōkyō ni mo akogare tetashi'
+Shiro: Hello!
 
-(Kida masaomi) Mi ~ kado!
+Aoi: Hello!
 
-(Mikado) E~e? E~e? Are? Kida-kun?
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Masaomi) Gimon katachi ka yo ~. Naraba kotaete yarou. Mitaku de erabe yo? 1 Kida masaomi. 2 Kida masaomi. 3 Kida masaomi!
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Mikado) Uwa ~! Kida-kun! Kida-kun'na no? A~a…
+Aoi: Oh, this is some more demonstration.
 
-(Masaomi) Ore no sannen kakete amidashita Konshin no neta wa surū kā? Hi~i sashi-burida nā oi!
+Kuro: Hello!
 
-(Mikado) Zenzen kawa~a terukara Bikkuri shita yo. Kaminoke some tari shi teru to wa Omowanakatta. Ato sono neta samui.
+Shiro: Hello!
 
-(Masaomi) Sorya yonen mo tateba nā ~. Tte yori Mikado wa shōgakkō no toki kara Zenzen kawa~a tenaijan yo ~! Tte iu ka Sarigenaku samui toka iu na.
+Aoi: Hello!
 
-(Mikado narēshon) `Sō Korega-dai no shin'yū kida masaomi' `Shōgakkō no toki Kare ga tenkō shite iraidattakedo Mitame igai wa Nan'nimo kawa~ ttenakatta'
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Masaomi) Jā ikou ze. Toriaezu soto ni deyou. Kibun wa masashiku gō uesuto! Nishiguchi to misekakete Seibu kuchi e mukau Torikkīna an'naibito….
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Mikado narēshon) `Gyagu wa samuikedo Honto wa ī Yatsuna nda' Kida-kun to wa Mainichi chatto de hanashite itakara Jikan mo kyori mo Ishiki shita koto wa nakatta' `Keredo kōshite yon-Nen-buri ni atte miruto Yappari hanareta basho de Kurashite ita nda nā to jikkan suru' Ā ~ kuso ~tsu. Ichido subetta neta no Kaisetsu o suru ore….
+Aoi: Oh, this is some more demonstration.
 
-(Mikado) `Kedo gyagu no samu-sa mo fukumete Nakami wa Hontoni nani mo kawattenai'
+Kuro: Hello!
 
-(Masaomi) Ikitai toko aru ka?
+Shiro: Hello!
 
-(Mikado) E ~ tto… Sanshain 60 to ka.
+Aoi: Hello!
 
-(Masaomi) Ima kara? Iku n'nara kanojo no hitori demo Tsurete itta kata ga ī zo.
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Mikado) Ja… jā Ikebukuro uesutogētopāku toka.
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Masaomi) Futsū ni nishiguchi kōen tte ie yo.
+Aoi: Oh, this is some more demonstration.
 
-(Mikado) E~tsu? Demo Ikebukuro hito wa Min'na sō yon deru n ja….
+Kuro: Hello!
 
-(Masaomi) Nanda yo Ikebukuro hito tte. A~a nani? Yukitai?
+Shiro: Hello!
 
-(Mikado) E~e? Iya… demo…. Ā ~a cho ~o… chotto! Ya… yameyou yo. Mō yoruda yo? Karāgyangu ttenoni Korosa re chau yo.
+Aoi: Hello!
 
-(Masaomi) Majide Son'na ko to iwa rete mo komaru ~. Tsuu ka mada roku-ji da zo? Ttaku… Okubyōna no mo aikawarazuda nā.
+Aoi: Oh, this is some more demonstration.
 
-(Tanaka tarō) Konbanwa ̄
+Kuro: Hello!
 
-(Setton) Ban wa ̄
+Shiro: Hello!
 
-(Tanaka tarō) A ̄setton-san Jitsuwa watashi, ashita kara Ikebukuro ni sumu koto ni narimashite
+Aoi: Hello!
 
-(Setton) He~e sōna nda ̄ Moshikashite go kinjo kamo janaidesu ka ̄
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Tanaka tarō) Kamodesu ne ♪ Ima wa jikka kara tsunaidemasukedo, ashita kara wa, Sanshain chikaku no apāto ni sumu koto ni nattemasu.
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-`Ikebukuro ni yōkoso~ ‘
+Aoi: Oh, this is some more demonstration.
 
-(Mikado kokoro no koe)≪ sugoi…≫≪ Netto ya manga de shika Mita koto no nakatta sekai ga Me no mae ni hiroga~a teru…≫
+Kuro: Hello!
 
-(Mikado) Uezakura-chō Ginza yori sugoi.
+Shiro: Hello!
 
-(Masaomi) Wa wa haa! Jā kondo Shibuya ni tsuretette yaru yo. A~a hitogomi ga mezurashī n'nara Keiba-ba ni tsuretette yarou ka? Wa ha~a…. Saikin wa karāgyangu mo hetta yo. Kyonen-atari wa Medatsu no ōkatta ndakedo Saitama to kōsō ya~a te Nan jū-ri mo paku rarete sa Sorekara wa onaji-iro no fuku kita renchū ga Sukoshi demo atsumarou mon'nara Sokkō de keisatsu ga Tonde kuru yō ni na~a chimatta no yo.
+Aoi: Hello!
 
-(Mikado) Jā ima no Ikebukuro wa anzen'na no?
+Kuro: Hello!
 
-(Masaomi) A~a… Iya ore mo Hanbun shitta kadakara Seikakuna koto wa Wakan'ne~e ndakedo sa. Hoka ni mo abunai renchū Yama hodo irushi Ki ~itsukeroyo.
+Shiro: Hello!
 
-(Mikado) Sōnanda….
+Aoi: Hello!
 
-(Masaomi) Chinamini koko wa 60-kai dōride Betsuni Sanshain tōri tte no moarukara.
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Mikado narēshon) `Yappari Sanshain tōri no kata ga Sakini dekita no ka na? '
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Mikado) Uwa~a! Su~u sumimasen! E~e….
+Aoi: Oh, this is some more demonstration.
 
-(Karisawa Yumazaki) n? A~a Kida-kun jan.
+Kuro: Hello!
 
-(Masaomi) A~a karisawa-san ni Yumazaki-san. Dōmo desu.
+Shiro: Hello!
 
-(Yumazaki) iyaiya hisashi buri.
+Aoi: Hello!
 
-(Togusa) u ~ su.
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Kadota) genki ka? Kida.
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Masaomi) Gobusata de ~ su.
+Aoi: Oh, this is some more demonstration.
 
-(Karisawa) Sotchi no ko wa dare? Tomodachi?
+Kuro: Hello!
 
-(Masaomi) Ā koitsu wa osananajimi de Kyō Ikebukuro ni Hikkoshite kita ndesu yo.
+Shiro: Hello!
 
-(Karisawa) hē ~-sōna nda.
+Aoi: Hello!
 
-(Masaomi) Kono hito wa karisawa-san.
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Mikado) A~a….
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Masaomi) Kotchi ga Yumazaki-san de Atchi ga Kadota-san to Togusa-san.
+Aoi: Oh, this is some more demonstration.
 
-(Mikado) A~a. E~e… e ~ tto Ryūgamine Mikado tte īmasu.
+Kuro: Hello!
 
-(Yumazaki) n? N n ~?
+Shiro: Hello!
 
-(Mikado kokoro no koe) `Nani ka mazui koto Ittadarou ka? '
+Aoi: Hello!
 
-(Yumazaki) pen'nēmu?
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Karisawa) nande kōkōsei ga Pen'nēmu tsukau no yo. A~a rajio toka zasshi tōkō toka?
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Mikado) Iya ano… ichiō honmyōdesu.
+Aoi: Oh, this is some more demonstration.
 
-(Karisawa & Yumazaki) n?
+Kuro: Hello!
 
-(Karisawa) uso ~! Honmyōna no! ?
+Shiro: Hello!
 
-(Yumazaki) iya sugoi! Kakkōī janaissu ka! Iya iyaiya manga no shujinkō mitaida.
+Aoi: Hello!
 
-(Masaomi) son'na ~ tereru janaidesu ka!
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Mikado kokoro no koe)≪-dōshi-yō… hanashi no tenkai ni tsuiteikenai ≫
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Masaomi) kaimono kaerissu ka?
+Aoi: Oh, this is some more demonstration.
 
-(Karisawa) so~tsu!
+Kuro: Hello!
 
-(Yumazaki) Dengeki bunko no shinkan ga deta mon de Zenbu de 30-satsu gurai katta ndesu yo.
+Shiro: Hello!
 
-(Mikado) dengeki bunko tte 1-kagetsu ni son'nani deru ndesu ka?
+Aoi: Hello!
 
-(Karisawa) iya ~ ne~e chigau wa yo. Watashi no bun to kare no bun o 1-satsu zutsu to ato wa… mā iroiro-yō ni 10-satsu gurai mitsukurotta no.
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Yumazaki) iroiro-yō ni ne!
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Futari) e e e he~e.
+Aoi: Oh, this is some more demonstration.
 
-(Mikado kokoro no koe) ≪ Iroiro-yō ttena nda? ≫≪ Hozon-yō toka Gyōmu-yō toka kanshō-yō toka Sō iu kotodarou ka? ≫
+Kuro: Hello!
 
-(Karisawa) jā sorosoro idō surukara.
+Shiro: Hello!
 
-(Yumazaki) mata chikaiuchini.
+Aoi: Hello!
 
-(Masaomi) hai. Sore jā!
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Karisawa) a~a jā kore atama kara….
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Kadota) mata na.
+Aoi: Oh, this is some more demonstration.
 
-(SFX) gan!
+Kuro: Hello!
 
-(Togusa) omaera-sha ni ateru n jane~e yo!
+Shiro: Hello!
 
-(Masaomi) mā ano hito-tachi mo kawa~tsu terukedo nakayoku shite sae irya futsū ni ī hito-tachidakara.
+Aoi: Hello!
 
-(Mikado) e… hē ~. Kida-kun ā iu taipu no hito tomo shiriaina nda ne.
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Masaomi) ore wa iron'na toko ni kubi tsukkon derukara nā. Mise no basho ya yasui furugi jōhō….
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Mikado narēshon) `4-Nen no ma ni kare wa dore dake Don'na keiken o shita ndarou? ' `Boku ga jimoto de hitori Ishuku shite ita koro ni'
+Aoi: Oh, this is some more demonstration.
 
-(Masaomi) Arayuru wadai ni tsūji tereba Taitei no on'na to hanashi awase rarerukara.
+Kuro: Hello!
 
-(Mikado narēshon) `Fujunda'
-__________________________________________________
+Shiro: Hello!
 
-(Morita) imashita yo ~.
+Aoi: Hello!
 
-(Asanuma) machigaine~e no?
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Morita) atama no ue kara ashi no saki made Iwa reta tōride machigainaissu.
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Asanuma) fu~u… rajā. Iki ma~a se.
+Aoi: Oh, this is some more demonstration.
 
-(Kanazawa) u ~i ~ su.
+Kuro: Hello!
 
-(Asanuma) omae-ryō machigaen na yo. Me samasanakattara agari ga Gakutto sagaru ndakara na.
+Shiro: Hello!
 
-(Kanazawa) ī janaissu ka. 10-Dai joshinara 5 warimashidesho?
+Aoi: Hello!
 
-(Asanuma) 2-warida 2-wari.
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Kanazawa) hisabisa ni oishīssu ne 10-dai joshi.
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Asanuma) ā. Jōhō-ya-sama-samada na.
+Aoi: Oh, this is some more demonstration.
 
-_________________________________________________
+Kuro: Hello!
 
-(Kanra) `konbanwa ~'
+Shiro: Hello!
 
-(Tanaka tarō) `Kanra-san Σ（ °Д°）biku~u!'
+Aoi: Hello!
 
-(Tanaka tarō) `itandesu ka!?'
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Kanra)`chotto denwa shi tetakara ̄ (´ ∀`)'
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Kanra) `a '
+Aoi: Oh, this is some more demonstration.
 
-(Kanra) `ima, rogu yomimashita ~a. Tōkyō ni kuru ndesu kā?'
+Kuro: Hello!
 
-(Kanra) `omedetōgozai ma ~ su'
+Shiro: Hello!
 
-(Kanra) `kondo, ofu-kai demo yarimasu kā.'
+Aoi: Hello!
 
-(Tanaka tarō) `a , ofu-kai, īdesu ne'
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Kanra) `ne ~~♪'
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Kanra) `a ...'
+Aoi: Oh, this is some more demonstration.
 
-(Kanra) `ofu-kai toieba,' Kanra `jisatsu ofu tte aru janaidesu kā'
+Kuro: Hello!
 
-(Setton)`a~a, hayarimashita yo ne'
+Shiro: Hello!
 
-(Setton)`netto de shiriatte, shinjū…….' Tanaka tarō `iyana hanashidesu yo nē' Tanaka tarō `demo saikin wa amari nyūsu ni nattemasen yo ne?'
+Aoi: Hello!
 
-(Setton)`misui de owa~a teru no ka……'
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Kanra) `aruiwa takusan aru ndakedo'
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Kanra)  `dare mo kidzui tenai dake kamo shiremasen yo ~'
+Aoi: Oh, this is some more demonstration.
 
-(Kanra) `mada shitai ga mitsuka~a tenai toka...'
+Kuro: Hello!
 
-(Tanaka tarō) `(;´ D `)…'
+Shiro: Hello!
 
-(Setton)`fukinshindesu yo'
+Aoi: Hello!
 
-(Kanra) `sōiya saikin, shissō jiken ōishi...'
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Tanaka tarō) `?'
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Tanaka tarō) `son'na nyūsu ga?'
+Aoi: Oh, this is some more demonstration.
 
-(Kanra)  `e ̄ to...' Kanra `taitei fuhō taizai shi teru gaikoku hito toka,'
+Kuro: Hello!
 
-(Kanra)  `chihō kara iede shite kita ko toka,'
+Shiro: Hello!
 
-(Kanra) `Ikebukuro kara Shibuya no ma de, ōi mitaida yo ~o'
-________________________________________________
+Aoi: Hello!
 
-(Morita) ano….
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Rio Kamichika) hai.
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Morita) mazenda-san? (As in, Magenta-san?)
+Aoi: Oh, this is some more demonstration.
 
-(Rio Kamichika) hai. A~a Nakura-sandesu ka?
+Kuro: Hello!
 
-(Morita) Yokatta ~! Yappari sōdatta ka.
+Shiro: Hello!
 
-(Rio Kamichika) hajimemashite. Yoroshiku onegai shimasu.
+Aoi: Hello!
 
-(Morita) Kochira koso. Jā ikimasu ka.
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Rio Kamichika) Hai….
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Morita) sugu soko nande. Hoka ni mo futari kitemasukara.
+Aoi: Oh, this is some more demonstration.
 
-(Rio Kamichika) wa a….
+Kuro: Hello!
 
-(Morita) are desu.
+Shiro: Hello!
 
-(Kanazawa) dōmo.
+Aoi: Hello!
 
-(Rio Kamichika) dōmo.
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Kanazawa) mawari daijōbu?
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Morita) hitokko hitoriinai shi.
+Aoi: Oh, this is some more demonstration.
 
-(Kanazawa) jā mā… Damashi chatte sunmasen!
+Kuro: Hello!
 
-(Rio Kamichika) wa~a! Kyā ~~! Ū ~u! Kyā!
+Shiro: Hello!
 
-(Kanazawa) ku~u! Koko ni ichi-ri iru ttsu Uno.
-______________________________________________________
+Aoi: Hello!
 
-(Mikado narēshon) `Kida-kun wa Yodomi naku shaberi tsudzuketa' `Boku wa chotto tsukarete ita' `Aruku no ni tsukareta no ka Kida-kun no samui gyagu ni Tsukkomi o ireru no ni tsukareta no ka. Tabun ryōhōdatta'
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Masaomi) Mada hanashi tarinai nā.
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Mikado) So…-sōda ne.
+Aoi: Oh, this is some more demonstration.
 
-(Masaomi) Ore no nakade wa mada Zentai no yonhyaku bun'no go kurai shika Shabe~e tenai kanjida yo
+Kuro: Hello!
 
-Chinamini yonhyaku-Bun'no yon wa Karisawa-san-tachi no kotona.
+Shiro: Hello!
 
-(Mikado narēshon) `Koko de Tsukkomou ka mayotte ita toki Me no mae ni sore ga arawareta'
+Aoi: Hello!
 
-(Saimon) onē San hisashi ~ buri.
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Mikado narēshon) `Itamae no kakkō o shite kyakuhiki o… Iya itamae no kakkō o shita kokujin ga Kyokan de… Iya kyakuhiki ga Itamae no ishō o shite iruga Sore wa naze ka kokujin de…'
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Saimon) o ni i san hisashiburi ~. E~e?
+Aoi: Oh, this is some more demonstration.
 
-(Saimon) n n ~.
+Kuro: Hello!
 
-(Masaomi) Yō Saimon! Hisashiburijan yo ~!
+Shiro: Hello!
 
-(Saimon) N ~ Kida sushi kuu? Ī yo. Yasuku suru yo. Sushi wa ī yo.
+Aoi: Hello!
 
-(Masaomi) A~a kin naikara kyō wa kanben. Baito shite kin haittara kuukara Sābisu shite yo.
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Saimon) Ō ~ dame ~. Sore shitara watashi Roshia no daichi no mokuzu ni Kieru ~ yo.
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Masaomi) Daichinanoni mo-kuzu ka yo. Soi jā na.
+Aoi: Oh, this is some more demonstration.
 
-(Saimon) O ni i san hisashi ~ buri.
+Kuro: Hello!
 
-(Mikado) Ima no hito mo shiriai?
+Shiro: Hello!
 
-(Masaomi) Ā. Simon tte sa Roshia-kei no kokujin de Soko no roshia hito ga ya~a teru Sushi-ya no kyakuhiki ya-a tenda.
+Aoi: Hello!
 
-(Mikado)E-e…. Gomen doko kara tsukkomubeki?
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Masaomi )Iya maji nandatte.
-Honto wa Sāmya tte iu ndakedo yo Min'na eigo yomide Saimon tte yonderunda. Yoku shin'ne~ekedo ryōshin ga Amerika kara bōmei shita toka nantoka. De shiriai no roshiahito ga Sushi-ya hajimetakara ￫ Kyakuhiki ni natta n datte yo ~. Aitsu wa Teki ni mawashicha ikenaikara na. Aitsu ga Mae ni kenka tometa toki yo ~o Onaji kurai no Yatsu o Katate de mochiage tetashi. Ā ato tsuide ni Teki ni mawashicha ikenai Yatsu no Mōhitori wa….
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(SFX) Bako~o! Gan! Gashān!
+Aoi: Oh, this is some more demonstration.
 
-Mikado: E~e nani? Nanina nda?
+Kuro: Hello!
 
-(Shizuo) o ~-ra ~a ~~!! U wa~a ~~!
+Shiro: Hello!
 
-(Masaomi) Ā… uwasa o surebada na. E~e? Ma~a tonikaku Heiwajima Shizuo tte Yatsu ni wa Chikadzuku na yo. Futsū ni iki terya Hanashikake rareru koto mo Naidaroukedo na.
+Aoi: Hello!
 
-≪ I… ittai dōiu hitonanda? ≫
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-Gacha (kuruma no doa no oto)
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Kanazawa) are? Mada ki tene~e ya. O~tsu kashī na.
+Aoi: Oh, this is some more demonstration.
 
-(Morita)-jō mo īkagenda nā. Motto ki o hikishimete morawa nē to.
+Kuro: Hello!
 
-(Asanuma) ma~a ījan. Ore-ra himadashi.
+Shiro: Hello!
 
-(Kanazawa) sōssu ne.
+Aoi: Hello!
 
-(Kanazawa) fu ~u ~. Yappa kōiu jikan wa Daijissu yo ne ~. Susanda nichijō ni Tsukanoma uruoi no hitotoki.
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(SFX) Buo~ō̄ !
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(futari) n?
+Aoi: Oh, this is some more demonstration.
 
-(Kanra) sōiya kyō Mimashita yo ~ rei no kuroi baiku ♪
+Kuro: Hello!
 
-(Tanaka tarō) kuroi baiku?
+Shiro: Hello!
 
-(Setton) a ̄.
+Aoi: Hello!
 
-(Kanra) Shiranai n desu ka ~ saikin, Shinjuku toka Ikebukuro de wadai no yatsu Mukashi kara toshi densetsu mitaina kanji Dattarashīkedo
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-Koko n toko, Shashin totta hito toka ga ōkute….
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Setton) a ̄ , shii teru shii teru ￫Tte iu ka, are wa Futsu ̄ no bōzōzoku tte iu ka. A,-betsu ni murete Chinsō shi teru wake janain dakedo.
+Aoi: Oh, this is some more demonstration.
 
-(Kanra) Niwananoni Raito tsukenaide hashii terunara, jūbun aho datte. Ningen dattara,dakedo …
+Kuro: Hello!
 
-(Tanaka)sorette, dou iu imi desuka?
+Shiro: Hello!
 
-(Kanra)aa, eto ne bucchake
+Aoi: Hello!
 
-(Kanra)bakemono mitai na mon nandesu…
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(SFX) Buo~ō̄ ! (Asanuma) oi.
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Morita & Kanazawa) n?
+Aoi: Oh, this is some more demonstration.
 
-(Kanazawa) ano ~-jō no hitossu ka?
+Kuro: Hello!
 
-(Morita)tsu ka dō mite mo tagawane~e?
+Shiro: Hello!
 
-(Kanazawa) jā daressu ka?
+Aoi: Hello!
 
-(Morita)tsuu ka namete nē? Bokutachi chotto otorikomichūnande Jama sundattara shinde moraemasu ~!? Gan!
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Kanazawa) uwa~a!
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Asanuma) ma… majikayo! A~a…. E he~tsu e he~e e e he~e….
+Aoi: Oh, this is some more demonstration.
 
-(Asanuma)ya be ~e!
+Kuro: Hello!
 
-(Morita) cho ~o… cho ~o cho ~o! Uwa~a! Yame… yamero! Yamero ~! Bachibachi! Bachibachi! Da ~ kara yamero ~o tsuttanoni.
+Shiro: Hello!
 
-(Morita) n! ?
+Aoi: Hello!
 
-(SFX) Doka~a! Baki~i!
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Asanuma) hi ~i ~…. Ya be ~e! Ya be ~e! Ya be ~e! Ha~a!
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Asanuma) na~a… nanina nda yo.
+Aoi: Oh, this is some more demonstration.
 
-(Asanuma) nanina nda yo ~~!!
+Kuro: Hello!
 
-(Tanaka tarō)Bakemono tte, dō iu koto desu ka?
+Shiro: Hello!
 
-(Kanra)Dotachin nanka wa shinigami natte itteru
+Aoi: Hello!
 
-(Tanaka tarō) Dotachin?
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Tanaka tarō)Dotachin tte dare?
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Kanra)Kurobaiku ni notteru otoko niwa ne…
+Aoi: Oh, this is some more demonstration.
 
-(Tanaka tarō) Teyu-ka Dotachin wa suru-? ? ? ( ‘ . w . ’)
+Kuro: Hello!
 
-Ku~u… u~u…
+Shiro: Hello!
 
-(Asanuma) Chi kishouga ~!!
+Aoi: Hello!
 
-(SFX) Kikyī̄ ! Gan! Gashān!
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Asanuma) E e he~e e he~e…. Hi ~yahha ~! Zama ~amiro! Konchikushō!
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-Kanra: Kubi kara ue ga nai no…
+Aoi: Oh, this is some more demonstration.
 
-A~a? U~u… u~u….
+Kuro: Hello!
 
-(Asanuma) a~a a~a…. U~u… u~u….
+Shiro: Hello!
 
-(Kanra) Kubi ga ne demo kirei ni naku natteru no ni ugo iterundatte…
+Aoi: Hello!
 
-Tsu…tsuu ka nan'na no? Omae. Na~a… nanina nda yo ~~!!
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Mikado) a~a…. Ano sa hoka ni mo Chikadzuicha ikenai hito tte iru no?
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Masaomi) U ~ n… yāsan'ya Gyangu mitaina no wa iumademonai to shite…. Orihara Izaya Tte hito ga iru ndakedo yo.
+Aoi: Oh, this is some more demonstration.
 
-(Mikado)Orihara Izaya? Kawatta namaeda ne.
+Kuro: Hello!
 
-(Masaomi) Omaegaiuna. Koitsu wa Yabaikara zettai ni kakawaru na yo. Ma~a Shinjuku shutai no hitodakara Mazu awanaidaroukedo. Ā atona, darāzu tte renchū ni mo Kakawaranai kata ga ī ze.
+Shiro: Hello!
 
-(Mikado) Darāzu?
+Aoi: Hello!
 
-(Masaomi) Ō. Wandarāzu no darāzu.
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-≪ Wandarāzu ttenani? ≫
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Masaomi) Ā ore mo kuwashī koto wa wakan'ne~e ndakedo yo Tonikaku ninzū ga ōkute sen ga Ippon buchi kireta chīmurashī. Karāgyangurashī ndakedo Don'na irona no kamo wakarane~e. Ma~a ima wa ukatsu ni Shūkai wa dekine~ekara Soitsu-ra mo itsunomanika Kaisan shi chimatte tari shite na. Sō nanda. A~a….
+Aoi: Oh, this is some more demonstration.
 
-(SFX)Don!
+Kuro: Hello!
 
-(Masaomi) Uwa~a! Ā~a! Oi daijōbu ka yo? U~u…. Kimi daijōbu? U~u….
+Shiro: Hello!
 
-(Mikado)Ā ano… sumimasen. Daijōbudesuka?
+Aoi: Hello!
 
-(Rio Kamichika)A~a…. Ano… ha~a…. Ha~a! Iya… iya~a ~! Iya ~a! Uwaa! A a~a oi!
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Masaomi)Nandaarya…. Rei mo nashi ka yo.
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Masaomi) Nani ga atta ndarou? Ano hito.
+Aoi: Oh, this is some more demonstration.
 
-(Masaomi)Sā? Nan demo okoru no ga Kono machidakara na.
+Kuro: Hello!
 
-(Mikado) Omae un ga ī yo. (Mikado) E~e?
+Shiro: Hello!
 
-(Masaomi) Kyō dake de Kadota-san-tachi ya Saimon ni aete Shizuo ga nageta jihanki ya ningen mo mirete An'na bijin ni butsukatta. Sore ungaī tte iu no ka na?
+Aoi: Hello!
 
-(Masaomi) Ureshī yo. E~e?
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Masaomi) Kono machi de omae to gakkō ni itte Mata issho ni asoberu nante sa.
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Mikado) Boku moda yo.
+Aoi: Oh, this is some more demonstration.
 
-(SFX) Buo~ō̄ ! (Masaomi) Omae hontoni un ga ī zo! E~e? Omake ni toshi densetsu o menomaede mi rare ndakara!
+Kuro: Hello!
 
-(Mikado) Kida-kun!
+Shiro: Hello!
 
-(Kanra) e ̄ , kuro baiku mokugeki shita no? Tanaka tarō-san.
+Aoi: Hello!
 
-(Setton)Hyotte shite yoru no hachi-ji sugi kurai
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Tanaka Taro)A, shitterundesuka?>setton-san
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Setton) N, maa, watashi sokoni itakara…
+Aoi: Oh, this is some more demonstration.
 
-(Tanaka Taro)?!
+Kuro: Hello!
 
-(Mikado) Ha~a ha~a… toshi densetsu ttenani?
+Shiro: Hello!
 
-(Masaomi) Kuro baikuda yo. Kubi nashi raidāda!
+Aoi: Hello!
 
-(Mikado narēshon)
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-`Boku wa sono toki jibun no karada ga Furuete iru no ni kidzuita'
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-`Kowakatta n janai' `Tabun kandō shite ita noda' `Sugoi mono o mita'
+Aoi: Oh, this is some more demonstration.
 
-`Boku wa koko de konomachide Yosode wa Tōtei dekinai yōna keiken o shita'
+Kuro: Hello!
 
-`Ima made kesshite Tegatodokanai to omotte ita Arienai genjitsu ga me no mae ni Hirogatte iru nda to kanjite ita'
+Shiro: Hello!
 
-`Saisho ni itta koto to Mujun suru mitaidakedo Sukunakutomo Kono toki wa sō omotte ita'
+Aoi: Hello!
 
-`Boku wa, boku no atarashī genjitsu ga hajimaru yokan ni furuete ita'
+Kuro: Just a demonstration of a script file that contains bunch of test words.
 
-(Tanaka tarō) hontōdesuka! Jā, shiranai uchi ni Surechiga~a teta kamo shiremasen ne!
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
 
-(Setto n) sō kamo.
+Aoi: Oh, this is some more demonstration.
 
-(Tanaka tarō) tokorode… dotachin tte dare?
+Kuro: Hello!
 
-< Jikai yokoku > `Doko ka in no aru shōjo ga Jibun no mishiranu genjitsu o kaimamiru' `Daremoga deai-sōde Deawanai genjitsu' `Hontōnara shinde ita hazu no Shōjo ga mita mono wa…' Jikai: Ikkyoichijitsu
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.
+
+Kuro: Hello!
+
+Kuro: Hello!
+
+Shiro: Hello!
+
+Aoi: Hello!
+
+Kuro: Just a demonstration of a script file that contains bunch of test words.
+
+Shiro: I see, this is also another demonstration of a script file content that contains much more words to help build up the file content.
+
+Aoi: Oh, this is some more demonstration.

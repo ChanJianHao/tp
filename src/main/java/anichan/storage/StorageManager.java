@@ -138,7 +138,7 @@ public class StorageManager {
     }
 
     /**
-     * Invokes the load method in WatchlistStorage to save the watchlist data.
+     * Invokes the load method in WatchlistStorage to load the watchlist data.
      *
      * @param workspaceName the name of the workspace to load the list from
      * @param watchlistList the watchlist list to load the data into
@@ -151,11 +151,26 @@ public class StorageManager {
 
     // ========================== Bookmark Saving and Loading ==========================
 
-    //@@author
+    //@@author OngXinBin
+    /**
+     * Invokes the save method in bookmarkStorage to save the bookmark data.
+     *
+     * @param workspaceName the name of the workspace to load the list from
+     * @param bookmark the bookmark list to save
+     * @throws AniException when an error occurred while saving the watchlist list data
+     */
     public void saveBookmark(String workspaceName, Bookmark bookmark) throws AniException {
         bookmarkStorage.save(workspaceName, bookmark);
     }
 
+    /**
+     * Invokes the load method in bookmarkStorage to load the bookmark data.
+     *
+     * @param workspaceName the name of the workspace to load the list from
+     * @param bookmark the bookmark list to save
+     * @return the load result message
+     * @throws AniException when an error occurred while saving the watchlist list data
+     */
     public String loadBookmark(String workspaceName, Bookmark bookmark) throws AniException {
         return bookmarkStorage.load(workspaceName, bookmark);
     }

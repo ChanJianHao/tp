@@ -8,7 +8,6 @@ Welcome to AniChan!
 
 -------------------------------------------------------------
 User: File does not exist.
--------------------------------------------------------------
 What's your name?
 Hello Friendly cat! What might your gender be? (Male/Female/Other)
 OOPS!!! Invalid input detected!
@@ -62,6 +61,7 @@ Hello Queen! What might your gender be? (Male/Female/Other)
 OOPS!!! Invalid input detected!
 What's your name?
 Hello Abec Steiner 77th! What might your gender be? (Male/Female/Other)
+-------------------------------------------------------------
 
 Default (Default) #> OOPS!!! Unknown command
 
@@ -108,7 +108,7 @@ WHITE CHoC MACADAMIA (Default) #> Workspace switched to COOKIES N CREME CH33SECA
 
 COOKIES N CREME CH33SECAKE (Default) #> Successfully deleted workspace: WHITE CHoC MACADAMIA
 
-COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided.
 
 COOKIES N CREME CH33SECAKE (Default) #> Currently, you have 5 workspace(s):
 1. Default
@@ -144,8 +144,16 @@ COOKIES N CREME CH33SECAKE (Default) #> Watchlist "ops" has been created success
 
 COOKIES N CREME CH33SECAKE (Default) #> "ops" is now your active watchlist!
 
+COOKIES N CREME CH33SECAKE (ops) #> OOPS!!! Please provide a positive integer instead!
+
+COOKIES N CREME CH33SECAKE (ops) #> OOPS!!! Please provide a integer instead!
+
 COOKIES N CREME CH33SECAKE (ops) #> Watchlist "ops" has been deleted successfully!
 Changed active watchlist to: "Default".
+
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! Please provide a positive integer instead!
+
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! Please provide a integer instead!
 
 COOKIES N CREME CH33SECAKE (Default) #> Currently, you have 3 watchlist(s):
 	1. Default
@@ -168,13 +176,13 @@ COOKIES N CREME CH33SECAKE (Default) #> Saving 3. Trigun to bookmark.
 
 COOKIES N CREME CH33SECAKE (Default) #> Saving 430. To Heart 2 to bookmark.
 
-COOKIES N CREME CH33SECAKE (Default) #> Editing Cowboy Bebop to have 5 episode(s).
+COOKIES N CREME CH33SECAKE (Default) #> Editing the current episode for Cowboy Bebop to episode(s) 5.
 
-COOKIES N CREME CH33SECAKE (Default) #> Editing InuYasha the Movie 2: The Castle Beyond the Looking Glass to have 1 episode(s).
+COOKIES N CREME CH33SECAKE (Default) #> Editing the current episode for InuYasha the Movie 2: The Castle Beyond the Looking Glass to episode(s) 1.
 
-COOKIES N CREME CH33SECAKE (Default) #> Editing Cowboy Bebop: The Movie - Knockin' on Heaven's Door to have 1 episode(s).
+COOKIES N CREME CH33SECAKE (Default) #> Editing the current episode for Cowboy Bebop: The Movie - Knockin' on Heaven's Door to episode(s) 1.
 
-COOKIES N CREME CH33SECAKE (Default) #> Editing Wind: A Breath of Heart (2004) to have 8 episode(s).
+COOKIES N CREME CH33SECAKE (Default) #> Editing the current episode for Wind: A Breath of Heart (2004) to episode(s) 8.
 
 COOKIES N CREME CH33SECAKE (Default) #> Adding note:"test" to Cowboy Bebop!
 
@@ -233,49 +241,49 @@ COOKIES N CREME CH33SECAKE (Default) #> [ID:1] Cowboy Bebop
 [ID:2] Cowboy Bebop: The Movie - Knockin' on Heaven's Door
 
 
-COOKIES N CREME CH33SECAKE (Default) #> 1. Cowboy Bebop [Id: 1]
-2. Cowboy Bebop: The Movie - Knockin' on Heaven's Door [Id: 2]
-3. Trigun [Id: 3]
-4. Witch Hunter Robin [Id: 4]
-5. Beet the Vandel Buster [Id: 5]
-6. Eyeshield 21 [Id: 6]
-7. Honey and Clover [Id: 7]
-8. Hungry Heart: Wild Striker [Id: 8]
-9. Initial D Fourth Stage [Id: 9]
-10. Monster [Id: 10]
-11. Naruto [Id: 11]
-12. One Piece [Id: 12]
-13. The Prince of Tennis [Id: 13]
-14. Ring ni Kakero 1 [Id: 14]
-15. School Rumble [Id: 15]
-16. Desert Punk [Id: 16]
-17. Texhnolyze [Id: 17]
-18. Trinity Blood [Id: 18]
-19. Yakitate!! Japan [Id: 19]
-20. Zipang [Id: 20]
+COOKIES N CREME CH33SECAKE (Default) #> 1.   Cowboy Bebop                                        [Id: 1  ]
+2.   Cowboy Bebop: The Movie - Knockin' on Heaven's D... [Id: 2  ]
+3.   Trigun                                              [Id: 3  ]
+4.   Witch Hunter Robin                                  [Id: 4  ]
+5.   Beet the Vandel Buster                              [Id: 5  ]
+6.   Eyeshield 21                                        [Id: 6  ]
+7.   Honey and Clover                                    [Id: 7  ]
+8.   Hungry Heart: Wild Striker                          [Id: 8  ]
+9.   Initial D Fourth Stage                              [Id: 9  ]
+10.  Monster                                             [Id: 10 ]
+11.  Naruto                                              [Id: 11 ]
+12.  One Piece                                           [Id: 12 ]
+13.  The Prince of Tennis                                [Id: 13 ]
+14.  Ring ni Kakero 1                                    [Id: 14 ]
+15.  School Rumble                                       [Id: 15 ]
+16.  Desert Punk                                         [Id: 16 ]
+17.  Texhnolyze                                          [Id: 17 ]
+18.  Trinity Blood                                       [Id: 18 ]
+19.  Yakitate!! Japan                                    [Id: 19 ]
+20.  Zipang                                              [Id: 20 ]
 Browsing Page: 1
 
-COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided.
 
-COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided.
 
-COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided.
 
-COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided.
 
-COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided.
 
-COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided.
 
-COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! Parameter : -   requires an additional field
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! Parameter : -   requires an additional field.
 
-COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided.
 
-COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided.
 
-COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided.
 
-COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! No parameter provided.
 
 COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! Invalid parameters detected!
 
@@ -416,5 +424,89 @@ COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! Workspace does not exist!
 COOKIES N CREME CH33SECAKE (Default) #> Currently, you have 2 workspace(s):
 1. RED VELVET Crumblesss
 2. COOKIES N CREME CH33SECAKE
+
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! Seems like you did not specify a parameter type
+
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! Seems like you did not specify a parameter type
+
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! Parameter : -o requires an additional field.
+
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! Parameter : -o requires an additional field.
+
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! a is not a valid option
+
+COOKIES N CREME CH33SECAKE (Default) #> 1.   Major S2                                            [Id: 511]
+2.   Steel Angel Kurumi Encore                           [Id: 510]
+3.   Steel Angel Kurumi Zero                             [Id: 509]
+4.   Steel Angel Kurumi 2                                [Id: 508]
+5.   Steel Angel Kurumi                                  [Id: 507]
+6.   Descendants of Darkness                             [Id: 506]
+7.   Digimon: Digital Monsters                           [Id: 505]
+8.   Grappler Baki Maximum Tournament                    [Id: 504]
+9.   YuGiOh!                                             [Id: 503]
+10.  Sky Blue                                            [Id: 502]
+11.  Wind: A Breath of Heart OVA                         [Id: 501]
+12.  Wind: A Breath of Heart (2004)                      [Id: 500]
+13.  Fantasy Chemistry Series: Wandaba Style             [Id: 499]
+14.  Venus Wars                                          [Id: 498]
+15.  Vampire Hunter D: Bloodlust                         [Id: 497]
+16.  Tenchi Muyo! Ryo-Ohki 3                             [Id: 496]
+17.  Tenchi Muyo! Ryo-Ohki 2                             [Id: 495]
+18.  No Need for Tenchi!                                 [Id: 494]
+19.  Tenchi in Tokyo                                     [Id: 493]
+20.  Tekken: The Motion Picture                          [Id: 492]
+Browsing Page: 1
+
+COOKIES N CREME CH33SECAKE (Default) #> 1.   Major S2                                            [Id: 511]
+2.   Steel Angel Kurumi Encore                           [Id: 510]
+3.   Steel Angel Kurumi Zero                             [Id: 509]
+4.   Steel Angel Kurumi 2                                [Id: 508]
+5.   Steel Angel Kurumi                                  [Id: 507]
+6.   Descendants of Darkness                             [Id: 506]
+7.   Digimon: Digital Monsters                           [Id: 505]
+8.   Grappler Baki Maximum Tournament                    [Id: 504]
+9.   YuGiOh!                                             [Id: 503]
+10.  Sky Blue                                            [Id: 502]
+11.  Wind: A Breath of Heart OVA                         [Id: 501]
+12.  Wind: A Breath of Heart (2004)                      [Id: 500]
+13.  Fantasy Chemistry Series: Wandaba Style             [Id: 499]
+14.  Venus Wars                                          [Id: 498]
+15.  Vampire Hunter D: Bloodlust                         [Id: 497]
+16.  Tenchi Muyo! Ryo-Ohki 3                             [Id: 496]
+17.  Tenchi Muyo! Ryo-Ohki 2                             [Id: 495]
+18.  No Need for Tenchi!                                 [Id: 494]
+19.  Tenchi in Tokyo                                     [Id: 493]
+20.  Tekken: The Motion Picture                          [Id: 492]
+Browsing Page: 1
+
+COOKIES N CREME CH33SECAKE (Default) #> 1.   Major S2                                            [Id: 511]
+2.   Steel Angel Kurumi Encore                           [Id: 510]
+3.   Steel Angel Kurumi Zero                             [Id: 509]
+4.   Steel Angel Kurumi 2                                [Id: 508]
+5.   Steel Angel Kurumi                                  [Id: 507]
+6.   Descendants of Darkness                             [Id: 506]
+7.   Digimon: Digital Monsters                           [Id: 505]
+8.   Grappler Baki Maximum Tournament                    [Id: 504]
+9.   YuGiOh!                                             [Id: 503]
+10.  Sky Blue                                            [Id: 502]
+11.  Wind: A Breath of Heart OVA                         [Id: 501]
+12.  Wind: A Breath of Heart (2004)                      [Id: 500]
+13.  Fantasy Chemistry Series: Wandaba Style             [Id: 499]
+14.  Venus Wars                                          [Id: 498]
+15.  Vampire Hunter D: Bloodlust                         [Id: 497]
+16.  Tenchi Muyo! Ryo-Ohki 3                             [Id: 496]
+17.  Tenchi Muyo! Ryo-Ohki 2                             [Id: 495]
+18.  No Need for Tenchi!                                 [Id: 494]
+19.  Tenchi in Tokyo                                     [Id: 493]
+20.  Tekken: The Motion Picture                          [Id: 492]
+Browsing Page: 1
+
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! Seems like you did not specify a parameter type
+
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! This input is not accepted, please try again!
+
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! This input is not accepted, please try again!
+
+COOKIES N CREME CH33SECAKE (Default) #> OOPS!!! Please leave a spacing between each parameter!
 
 COOKIES N CREME CH33SECAKE (Default) #> Sayonara Abec Steiner 77th-chan!

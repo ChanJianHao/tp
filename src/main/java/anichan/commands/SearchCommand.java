@@ -7,7 +7,6 @@ import anichan.human.User;
 import anichan.logger.AniLogger;
 import anichan.storage.StorageManager;
 
-import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -76,11 +75,32 @@ public class SearchCommand extends Command {
      */
     private void searchForGenre(AnimeData animeData) {
         LOGGER.log(Level.INFO, SEARCHING_BY_GENRE);
+        StringBuilder searchOutput = new StringBuilder();
         for (Anime anime : animeData.getAnimeDataList()) {
-            if (Arrays.asList(anime.getGenre()).contains(searchGenre)) {
-                result += ID_HEADER + anime.getAnimeID() + ID_CLOSER + anime.getAnimeName() + System.lineSeparator();
+            if (doesAnimeContainThatGenre(anime)) {
+                searchOutput.append(ID_HEADER);
+                searchOutput.append(anime.getAnimeID());
+                searchOutput.append(ID_CLOSER);
+                searchOutput.append(anime.getAnimeName());
+                searchOutput.append(System.lineSeparator());
             }
         }
+        result = searchOutput.toString();
+    }
+
+    /**
+     * Loops through all genre that the anime has and find the search term.
+     *
+     * @param anime the anime to check.
+     * @return true if a genre matches the search term
+     */
+    private boolean doesAnimeContainThatGenre(Anime anime) {
+        for (String genre: anime.getGenre()) {
+            if (genre.equalsIgnoreCase(searchGenre)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /**
@@ -90,11 +110,17 @@ public class SearchCommand extends Command {
      */
     private void searchForAnime(AnimeData animeData) {
         LOGGER.log(Level.INFO, SEARCHING_BY_ANIME_NAME);
+        StringBuilder searchOutput = new StringBuilder();
         for (Anime anime : animeData.getAnimeDataList()) {
             if (anime.getAnimeName().toLowerCase().contains(searchTerm)) {
-                result += ID_HEADER + anime.getAnimeID() + ID_CLOSER + anime.getAnimeName() + System.lineSeparator();
+                searchOutput.append(ID_HEADER);
+                searchOutput.append(anime.getAnimeID());
+                searchOutput.append(ID_CLOSER);
+                searchOutput.append(anime.getAnimeName());
+                searchOutput.append(System.lineSeparator());
             }
         }
+        result = searchOutput.toString();
     }
 
     public void setSearchTerm(String searchTerm) {
@@ -103,7 +129,7 @@ public class SearchCommand extends Command {
     }
 
     public void setSearchGenre(String searchGenre) {
-        this.searchGenre = searchGenre;
+        this.searchGenre = searchGenre.toLowerCase();
         setSearchType(SEARCH_BY_GENRE);
     }
 

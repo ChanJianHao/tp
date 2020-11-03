@@ -7,7 +7,7 @@ import anichan.exception.AniException;
  * Handles parsing for search command.
  */
 public class SearchParser extends CommandParser {
-    private static final String SEARCH_TYPE_ALREADY_SET_ERROR = "Please specify only one type of search!";
+    private static final String NO_PARAM_PROVIDED = "Please provide a parameter type. Search will accept -n or -g.";
     private SearchCommand searchCommand;
 
     public SearchParser() {
@@ -22,7 +22,7 @@ public class SearchParser extends CommandParser {
      * @throws AniException if an error is encountered while parsing
      */
     public SearchCommand parse(String description) throws AniException {
-        String[] paramGiven = parameterSplitter(description);
+        String[] paramGiven = description.split(DASH, FIELD_SPLIT_LIMIT);
         paramIsSetCheck(paramGiven);
         parameterParser(paramGiven);
         return searchCommand;
@@ -35,40 +35,22 @@ public class SearchParser extends CommandParser {
      * @throws AniException if invalid parameters are parsed in
      */
     public void parameterParser(String[] paramGiven) throws AniException {
-        for (String param : paramGiven) {
-            String[] paramParts = param.split(SPLIT_WHITESPACE, FIELD_SPLIT_LIMIT);
-            if (paramParts.length == 0) {
-                break;
-            }
-            switch (paramParts[0].trim()) {
-            case "": //skip the first empty param
-                break;
-            case NAME_PARAM:
-                paramFieldCheck(paramParts);
-                checkIfSearchTypeAlreadySet();
-                searchCommand.setSearchTerm(paramParts[1]);
-                break;
-            case GENRE_PARAM:
-                paramFieldCheck(paramParts);
-                checkIfSearchTypeAlreadySet();
-                searchCommand.setSearchGenre(paramParts[1]);
-                break;
-            default:
-                String invalidParameter = PARAMETER_ERROR_HEADER + param + NOT_RECOGNISED;
-                throw new AniException(invalidParameter);
-            }
+        if (paramGiven[1].isBlank()) {
+            throw new AniException(NO_PARAM_PROVIDED);
         }
-    }
+        String[] paramParts = paramGiven[1].split(WHITESPACE, FIELD_SPLIT_LIMIT);
+        paramFieldCheck(paramParts);
 
-    /**
-     * Checks if search type had been previously set since name and genre searches are mutually
-     * exclusive actions for now.
-     *
-     * @throws AniException if search type had already been specified
-     */
-    private void checkIfSearchTypeAlreadySet() throws AniException {
-        if (searchCommand.getSearchType() != -1) {
-            throw new AniException(SEARCH_TYPE_ALREADY_SET_ERROR);
+        switch (paramParts[0].trim()) {
+        case NAME_PARAM:
+            searchCommand.setSearchTerm(paramParts[1]);
+            break;
+        case GENRE_PARAM:
+            searchCommand.setSearchGenre(paramParts[1]);
+            break;
+        default:
+            String invalidParameter = PARAMETER_ERROR_HEADER + paramGiven[1] + NOT_RECOGNISED;
+            throw new AniException(invalidParameter);
         }
     }
 }

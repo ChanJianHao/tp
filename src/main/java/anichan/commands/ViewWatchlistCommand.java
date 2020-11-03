@@ -19,7 +19,8 @@ import java.util.logging.Logger;
  */
 public class ViewWatchlistCommand extends Command {
     protected static final String OUT_OF_BOUND_INDEX_ERROR = "Watchlist ID is invalid!";
-    protected static final String EMPTY_WATCHLIST_ERROR = "There are no watchlists in your workspace!";
+    protected static final String NO_WATCHLIST_ERROR = "There are no watchlists in your workspace!";
+    protected static final String EMPTY_WATCHLIST_ERROR = "There are no anime in ";
     
     private Integer watchlistIndex;
     private static final Logger LOGGER = AniLogger.getAniLogger(ViewWatchlistCommand.class.getName());
@@ -41,8 +42,8 @@ public class ViewWatchlistCommand extends Command {
         int watchlistSize = watchlistList.size();
 
         if (watchlistSize == 0) {
-            LOGGER.log(Level.WARNING, EMPTY_WATCHLIST_ERROR);
-            throw new AniException(EMPTY_WATCHLIST_ERROR);
+            LOGGER.log(Level.WARNING, NO_WATCHLIST_ERROR);
+            throw new AniException(NO_WATCHLIST_ERROR);
         } else if (watchlistIndex < 0) {
             LOGGER.log(Level.WARNING, OUT_OF_BOUND_INDEX_ERROR);
             throw new AniException(OUT_OF_BOUND_INDEX_ERROR);
@@ -51,7 +52,14 @@ public class ViewWatchlistCommand extends Command {
             throw new AniException(OUT_OF_BOUND_INDEX_ERROR);
         }
         
-        String result = buildAnimeInWatchlist(animeData, watchlistList);
+        Watchlist selectedWatchlist = watchlistList.get(watchlistIndex);
+        ArrayList<Integer> animeInWatchlist = selectedWatchlist.getAnimeList();
+        String selectedWatchlistName = selectedWatchlist.getName();
+        
+        if (animeInWatchlist.size() == 0) {
+            throw new AniException(EMPTY_WATCHLIST_ERROR + selectedWatchlistName + " watchlist!");
+        }
+        String result = buildAnimeInWatchlist(animeData, selectedWatchlist);
         
         return result;
     }
@@ -61,11 +69,10 @@ public class ViewWatchlistCommand extends Command {
      * in the specific Watchlist.
      * 
      * @param animeData used to retrieve anime information
-     * @param watchlistList list of all the Watchlists
+     * @param selectedWatchlist the Watchlist that was selected to be viewed
      * @return a string representation of all the anime in the specific Watchlist
      */
-    private String buildAnimeInWatchlist(AnimeData animeData, ArrayList<Watchlist> watchlistList) {
-        Watchlist selectedWatchlist = watchlistList.get(watchlistIndex);
+    private String buildAnimeInWatchlist(AnimeData animeData, Watchlist selectedWatchlist) {
         ArrayList<Integer> animeInWatchlist = selectedWatchlist.getAnimeList();
         String selectedWatchlistName = selectedWatchlist.getName();
         

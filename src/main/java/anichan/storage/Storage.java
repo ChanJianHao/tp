@@ -15,8 +15,8 @@ import java.util.logging.Logger;
  * Abstract class to represent the various storage type.
  */
 public abstract class Storage {
-    private static final String NEGATIVE_INTEGER_REGEX = "^[-]\\d+$";
-    private static final String POSITIVE_INTEGER_REGEX = "^\\d+$";
+    private static final String REGEX_POSITIVE_INTEGER = "^\\d+$";
+    private static final String REGEX_NEGATIVE_INTEGER = "^[-]\\d+$";
 
     private static final String EMPTY_STRING = "";
     private static final String FILE_DOES_NOT_EXIST = "File does not exist.";
@@ -67,19 +67,19 @@ public abstract class Storage {
      * Checks if a {@code String} is a positive integer.
      *
      * @param integerString the {@code String} to be checked
-     * @return {@code true} if {@code integerString} is a positive integer; false otherwise
+     * @return {@code true} if {@code integerString} is a positive integer; {@code false} otherwise
      */
     public boolean isPositiveInteger(String integerString) {
-        return integerString.matches(POSITIVE_INTEGER_REGEX);
+        return integerString.matches(REGEX_POSITIVE_INTEGER);
     }
 
     /**
      * Checks if a {@code String} is a (positive or negative) integer.
      *
      * @param integerString the {@code String} to be checked
-     * @return {@code true} if {@code integerString} is a (positive or negative) integer; false otherwise
+     * @return {@code true} if {@code integerString} is a (positive or negative) integer; {@code false} otherwise
      */
     public boolean isPositiveOrNegativeInteger(String integerString) {
-        return integerString.matches(POSITIVE_INTEGER_REGEX) || integerString.matches(NEGATIVE_INTEGER_REGEX);
+        return integerString.matches(REGEX_POSITIVE_INTEGER) || integerString.matches(REGEX_NEGATIVE_INTEGER);
     }
 }

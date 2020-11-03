@@ -110,7 +110,7 @@ public class UserStorage extends Storage {
      * Validates the string representation read from the user data file.
      *
      * @param fileContentSplit encoded string representation of the usr object
-     * @return {@code true} if the string representation is valid; false otherwise
+     * @return {@code true} if the string representation is valid; {@code false} otherwise
      */
     private boolean isValidUserString(String[] fileContentSplit) {
         return (fileContentSplit.length == 2);

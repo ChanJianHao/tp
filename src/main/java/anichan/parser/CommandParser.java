@@ -11,21 +11,26 @@ public abstract class CommandParser {
     //Shared Constants by Parsers
     protected static final String NAME_PARAM = "n";
     protected static final String GENRE_PARAM = "g";
-    protected static final String SPLIT_DASH = "-";
-    protected static final String SPLIT_WHITESPACE = " ";
+    protected static final String DASH = "-";
+    protected static final String WHITESPACE = " ";
     protected static final String NOT_RECOGNISED = " is not recognised!";
     protected static final String PARAMETER_ERROR_HEADER = "Parameter : -";
-    protected static final String REQUIRE_ADDITIONAL_FIELD = " requires an additional field";
-    protected static final String TOO_MUCH_FIELDS = " has too much fields";
-    protected static final String NO_PARAMETER_PROVIDED = "No parameter provided";
+    protected static final String REQUIRE_ADDITIONAL_FIELD = " requires an additional field.";
+    protected static final String TOO_MUCH_FIELDS = " has too much fields.";
+    protected static final String TOO_MUCH_PARAMETERS = " has too much parameters.";
+    protected static final String NO_PARAMETER_PROVIDED = "No parameter provided.";
     protected static final String DESCRIPTION_CANNOT_BE_NULL = "description should not be null.";
-    protected static final String NOT_INTEGER = "Please provide an integer instead!";
+    protected static final String NOT_INTEGER = "Please provide a integer instead!";
+    protected static final String NOT_POSITIVE_INTEGER = "Please provide a positive integer instead!";
     protected static final String INTEGER_VALUE_OUTSIDE_OF_INTEGER_RANGE = "Please ensure the integer is not larger"
                                                                             + " than " + Integer.MAX_VALUE + ".";
+    protected static final String DESCRIPTION_NOT_REQUIRED = "Command does not require additional parameters!";
     protected static final String REGEX_ALPHANUMERIC = "^[a-zA-Z0-9\\s]*$";
+    protected static final String REGEX_PARAMETER = "^.*-[a-zA-z]+.*$";
     protected static final int FIELD_SPLIT_LIMIT = 2;
 
-    private static final String INTEGER_REGEX = "^\\d+$";
+    private static final String REGEX_POSITIVE_INTEGER = "^\\d+$";
+    private static final String REGEX_NEGATIVE_INTEGER = "^[-]\\d+$";
 
     /**
      * Splits the parameters into individual parts for parsing.
@@ -85,8 +90,18 @@ public abstract class CommandParser {
      * @param checkStr the string to check
      * @return true if it can be parsed into an integer
      */
-    protected boolean isInt(String checkStr) {
-        return checkStr.matches(INTEGER_REGEX);
+    protected boolean isInteger(String checkStr) {
+        return checkStr.matches(REGEX_POSITIVE_INTEGER);
+    }
+
+    /**
+     * Check if the string is a negative integer.
+     *
+     * @param checkStr the string to check
+     * @return {@code true} if it is a negative integer; {@code false} otherwise
+     */
+    protected boolean isNegativeInteger(String checkStr) {
+        return checkStr.matches(REGEX_NEGATIVE_INTEGER);
     }
 
     //@@author OngDeZhi

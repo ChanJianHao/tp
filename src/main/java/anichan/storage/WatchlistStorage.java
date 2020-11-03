@@ -170,7 +170,7 @@ public class WatchlistStorage extends Storage {
      * Validates the string representation of the watchlist object.
      *
      * @param lineSplit the string representation of the watchlist object
-     * @return {@code true} if the string representation is valid; false otherwise
+     * @return {@code true} if the string representation is valid; {@code false} otherwise
      */
     private boolean isValidWatchlistString(String[] lineSplit) {
         boolean isValidSplitLength = (lineSplit.length == 2);
@@ -191,7 +191,7 @@ public class WatchlistStorage extends Storage {
      * Validates the anime index read from the string representation of the watchlist object.
      *
      * @param animeIndex the index of an anime series
-     * @return {@code true} if the index is valid; false otherwise
+     * @return {@code true} if the index is valid; {@code false} otherwise
      */
     private boolean isValidAnimeIndexString(String animeIndex) {
         boolean isAnimeIndexBlank = animeIndex.isBlank();

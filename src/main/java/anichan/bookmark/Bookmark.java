@@ -25,7 +25,7 @@ public class Bookmark {
         this.noteList.add(new Note());
     }
 
-    public void addAnimeBookmarkEpisode(int animeIndex, int episodeNumber, Note note) {
+    public void addAnimeBookmark(int animeIndex, int episodeNumber, Note note) {
         this.animeBookmarkList.add(animeIndex);
         this.animeEpisode.add(episodeNumber);
         this.noteList.add(note);
@@ -34,6 +34,7 @@ public class Bookmark {
     public void removeAnimeBookmark(int bookmarkIndex) {
         this.animeBookmarkList.remove(bookmarkIndex);
         this.animeEpisode.remove(bookmarkIndex);
+        this.noteList.remove(bookmarkIndex);
     }
 
     public void editAnimeBookmarkEpisode(int bookmarkIndex, int episode) {

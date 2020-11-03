@@ -59,10 +59,10 @@ public class Parser {
             return new InfoParser().parse(description);
 
         case "help":
-            return new HelpCommand();
+            return new HelpParser().parse(description);
 
         case "exit":
-            return new ExitCommand();
+            return new ExitParser().parse(description);
 
         default:
             throw new AniException("Unknown command");

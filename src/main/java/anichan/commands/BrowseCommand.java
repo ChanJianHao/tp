@@ -16,15 +16,13 @@ import java.util.logging.Logger;
  * Represents the command that allows the user to browse through all anime series.
  */
 public class BrowseCommand extends Command {
-    protected static final String ID_HEADER = " [Id: ";
-    private static final String ID_CLOSER = "]";
-    private static final String DOT_SPACE = ". ";
     private int sortType;
     private int order;
     private int page;
     private int indexToPrint;
     private int animePerPage;
 
+    //Constant values used for sortBrowseList()
     private static final int ANIME_PER_PAGE = 20;
     private static final int ID_SORT = 0;
     private static final int ORDER_DESCENDING = 0;
@@ -33,6 +31,18 @@ public class BrowseCommand extends Command {
     private static final int RESET_SORT = 3;
     private static final int ORDER_ASCENDING = 1;
 
+    //Constant Strings used for buildBrowseOutput()
+    private static final String ID_HEADER = " [Id: ";
+    private static final String ID_CLOSER = "]";
+    private static final String ASCII_ONLY_REGEX = "[^\\x00-\\x7F]";
+    private static final String INDICATE_MORE = "...";
+    private static final String PERCENTAGE_STRING = "%";
+    private static final String S_STRING = "s";
+    private static final String EMPTY_STRING = "";
+    private static final String DOT_SPACE = ". ";
+    private static final String LAST_PAGE_INDICATOR = "You have reached the last page!";
+
+    //Log Messages
     private static final String LAST_ANIME_WARNING = "Printing Last Anime Series from source";
     private static final String BROWSE_PAGE_INDICATOR = "Browsing Page: ";
     private static final String OUT_OF_BOUND_PAGE_WARNING = "Getting page: Tried to start at index: ";
@@ -86,23 +96,51 @@ public class BrowseCommand extends Command {
      * @throws AniException if the starting index of the page supplied exceeds total number of anime
      */
     private String buildBrowseOutput(ArrayList<Anime> usableList) throws AniException {
-        if (indexToPrint >= usableList.size()) {
-            LOGGER.log(Level.WARNING, OUT_OF_BOUND_PAGE_WARNING + indexToPrint);
-            throw new AniException(OUT_OF_BOUND_PAGE_ERROR);
-        }
+        checkForPageBound(usableList);
         StringBuilder result = new StringBuilder();
         for (int i = indexToPrint; i < indexToPrint + animePerPage; i++) {
             Anime browseAnime = usableList.get(i);
-            result.append((i + 1) + DOT_SPACE + browseAnime.getAnimeName());
-            result.append(ID_HEADER + browseAnime.getAnimeID() + ID_CLOSER);
+            String animeName = browseAnime.getAnimeName();
+            //Removes non-ascii and trim long titles.
+            animeName = animeName.replaceAll(ASCII_ONLY_REGEX, EMPTY_STRING);
+            if (animeName.length() >= 51) {
+                animeName = animeName.substring(0, 48);
+                animeName += INDICATE_MORE;
+            }
+
+            //Pads the output if necessary
+            String currAnimeID = Integer.toString(browseAnime.getAnimeID());
+            String browseIndex = i + 1 + DOT_SPACE;
+            animeName = String.format(PERCENTAGE_STRING + (-51) + S_STRING, animeName.trim());
+            currAnimeID = String.format(PERCENTAGE_STRING + (-3) + S_STRING, currAnimeID);
+            browseIndex = String.format(PERCENTAGE_STRING + (-5) + S_STRING, browseIndex);
+
+            result.append(browseIndex);
+            result.append(animeName);
+            result.append(ID_HEADER);
+            result.append(currAnimeID);
+            result.append(ID_CLOSER);
             result.append(System.lineSeparator());
             if (i + 1 >= usableList.size()) {
+                result.append(LAST_PAGE_INDICATOR).append(System.lineSeparator());
                 LOGGER.log(Level.WARNING, LAST_ANIME_WARNING);
                 break;
             }
         }
         result.append(BROWSE_PAGE_INDICATOR).append(page);
         return result.toString();
+    }
+
+    /**
+     * Checks if the page supplied exceed the initial starting index.
+     * @param usableList the list containing Anime objects to be sorted
+     * @throws AniException if the page supplied too big to be used.
+     */
+    private void checkForPageBound(ArrayList<Anime> usableList) throws AniException {
+        if (indexToPrint >= usableList.size()) {
+            LOGGER.log(Level.WARNING, OUT_OF_BOUND_PAGE_WARNING + indexToPrint);
+            throw new AniException(OUT_OF_BOUND_PAGE_ERROR);
+        }
     }
 
     /**

@@ -257,7 +257,7 @@ public class BookmarkCommand extends Command {
      * Check that the bookmark does not already have the bookmark entry.
      *
      * @param bookmark used to manage bookmark entries
-     * @throws AniException if there is bookmark entry already exist
+     * @throws AniException if bookmark entry already exist
      */
     private void checkAnimeNotInBookmark(Bookmark bookmark) throws AniException {
         if (bookmark.checkExist(animeIndex - 1)) {
@@ -282,7 +282,8 @@ public class BookmarkCommand extends Command {
         Anime animeToEdit = bookmark.getAnimeBookmarkByIndex(animeData, bookmarkIndex - 1);
         checkEpisode(animeToEdit.getTotalEpisodes());
         bookmark.editAnimeBookmarkEpisode(bookmarkIndex - 1, bookmarkEpisode);
-        result = "Editing " + animeToEdit.getAnimeName() + " to have " + bookmarkEpisode + " episode(s).";
+        result = "Editing the current episode for " + animeToEdit.getAnimeName() + " to episode(s) "
+                + bookmarkEpisode + ".";
         return result;
     }
 
@@ -395,24 +396,24 @@ public class BookmarkCommand extends Command {
         this.bookmarkAction = actionString;
     }
 
-    public void setBookmarkIndex(String bookmarkIndexString) {
-        this.bookmarkIndex = Integer.parseInt(bookmarkIndexString);
+    public void setBookmarkIndex(int bookmarkIndex) {
+        this.bookmarkIndex = bookmarkIndex;
     }
 
-    public void setAnimeIndex(String animeIndexString) {
-        this.animeIndex = Integer.parseInt(animeIndexString);
+    public void setAnimeIndex(int animeIndex) {
+        this.animeIndex = animeIndex;
     }
 
-    public void setBookmarkEpisode(String bookmarkEpisodeString) {
-        this.bookmarkEpisode = Integer.parseInt(bookmarkEpisodeString);
+    public void setBookmarkEpisode(int bookmarkEpisode) {
+        this.bookmarkEpisode = bookmarkEpisode;
     }
 
     public void setBookmarkNote(String note) {
         this.bookmarkNote = note;
     }
 
-    public void setNoteIndex(String noteIndex) {
-        this.noteIndex = Integer.parseInt(noteIndex);
+    public void setNoteIndex(int noteIndex) {
+        this.noteIndex = noteIndex;
     }
 
 }

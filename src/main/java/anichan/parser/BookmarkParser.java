@@ -71,46 +71,46 @@ public class BookmarkParser extends CommandParser {
      * @throws AniException if invalid parameters are parsed in
      */
     private void parameterParser(String paramGiven) throws AniException {
-        String[] paramParts = paramGiven.split(WHITESPACE_PARAM);
+        String[] paramParts = paramGiven.split(WHITESPACE_PARAM,2);
+        String bookmarkAction = paramParts[0].trim();
         paramEmptyCheck(paramGiven, paramParts);
-        switch (paramParts[0].trim()) {
+        switch (bookmarkAction) {
         case EPISODE_PARAM:
             paramFieldCheck(paramParts);
             paramExtraFieldCheck(paramParts);
-            bookmarkCommand.setBookmarkAction(paramParts[0]);
+            bookmarkCommand.setBookmarkAction(bookmarkAction);
             checkIsInteger(paramGiven, paramParts[1], BOOKMARK_EPISODE);
-            bookmarkCommand.setBookmarkEpisode(paramParts[1].trim());
+            bookmarkCommand.setBookmarkEpisode(parseStringToInteger(paramParts[1].trim()));
             break;
         case ADD_PARAM:
             paramFieldCheck(paramParts);
             paramExtraFieldCheck(paramParts);
-            bookmarkCommand.setBookmarkAction(paramParts[0]);
+            bookmarkCommand.setBookmarkAction(bookmarkAction);
             checkIsInteger(paramGiven, paramParts[1], BOOKMARK_ADD);
-            bookmarkCommand.setAnimeIndex(paramParts[1].trim());
+            bookmarkCommand.setAnimeIndex(parseStringToInteger(paramParts[1].trim()));
             break;
         case DELETE_PARAM:
             paramFieldCheck(paramParts);
             paramExtraFieldCheck(paramParts);
-            bookmarkCommand.setBookmarkAction(paramParts[0]);
+            bookmarkCommand.setBookmarkAction(bookmarkAction);
             checkIsInteger(paramGiven, paramParts[1], BOOKMARK_DELETE);
-            bookmarkCommand.setBookmarkIndex(paramParts[1].trim());
+            bookmarkCommand.setBookmarkIndex(parseStringToInteger(paramParts[1].trim()));
             break;
         case LIST_PARAM:
-            bookmarkCommand.setBookmarkAction(paramParts[0]);
+            bookmarkCommand.setBookmarkAction(bookmarkAction);
             listFieldCheck(paramParts);
             break;
         case ADD_NOTE_PARAM:
             paramFieldCheck(paramParts);
-            paramParts = paramGiven.split(WHITESPACE_PARAM, 2);
-            bookmarkCommand.setBookmarkAction(paramParts[0]);
+            bookmarkCommand.setBookmarkAction(bookmarkAction);
             bookmarkCommand.setBookmarkNote(paramParts[1].trim());
             break;
         case REMOVE_NOTE_PARAM:
             paramFieldCheck(paramParts);
             paramExtraFieldCheck(paramParts);
-            bookmarkCommand.setBookmarkAction(paramParts[0]);
+            bookmarkCommand.setBookmarkAction(bookmarkAction);
             checkIsInteger(paramGiven, paramParts[1], BOOKMARK_REMOVE_NOTE);
-            bookmarkCommand.setNoteIndex(paramParts[1]);
+            bookmarkCommand.setNoteIndex(parseStringToInteger(paramParts[1].trim()));
             break;
         default:
             String invalidParameter = PARAMETER_ERROR_HEADER + paramGiven + NOT_RECOGNISED;
@@ -128,7 +128,7 @@ public class BookmarkParser extends CommandParser {
      * @throws AniException when an error occurred while executing the command
      */
     private void checkIsInteger(String paramGiven, String paramPart, String bookmarkType) throws AniException {
-        if (!isInt(paramPart.trim())) {
+        if (!isInteger(paramPart.trim())) {
             String invalidParameter = PARAMETER_ERROR_HEADER + paramGiven + NOT_RECOGNISED
                     + System.lineSeparator() + " Bookmark " + bookmarkType + " param requires integer.";
             LOGGER.log(Level.WARNING, BOOKMARK_LOAD_ERROR_HEADER + invalidParameter);
@@ -180,7 +180,7 @@ public class BookmarkParser extends CommandParser {
                 || bookmarkCommand.getBookmarkAction().equals(ADD_NOTE_PARAM)
                 || bookmarkCommand.getBookmarkAction().equals(REMOVE_NOTE_PARAM)) {
             checkIsInteger(paramGiven, paramGiven, BOOKMARK_INDEX);
-            bookmarkCommand.setBookmarkIndex(paramGiven.trim());
+            bookmarkCommand.setBookmarkIndex(parseStringToInteger(paramGiven.trim()));
         } else {
             boolean isEmpty = paramGiven.trim().equals(EMPTY_PARAM);
             if (!isEmpty) {
@@ -199,14 +199,15 @@ public class BookmarkParser extends CommandParser {
      * @throws AniException if the only field is not integer or empty
      */
     private void setSingleParameter(String paramGiven) throws AniException {
-        if (!isInt(paramGiven.trim())) {
+        parseStringToInteger(paramGiven.trim());
+        if (!isInteger(paramGiven.trim())) {
             String invalidBookmarkIndex = PARAMETER_ERROR_HEADER + paramGiven + NOT_RECOGNISED
                     + System.lineSeparator() + BOOKMARK_INDEX_INFO_ERROR;
             LOGGER.log(Level.WARNING, BOOKMARK_LOAD_ERROR_HEADER + invalidBookmarkIndex);
             throw new AniException(invalidBookmarkIndex);
         }
         bookmarkCommand.setBookmarkAction(INFO_PARAM);
-        bookmarkCommand.setBookmarkIndex(paramGiven.trim());
+        bookmarkCommand.setBookmarkIndex(parseStringToInteger(paramGiven.trim()));
     }
 
     /**

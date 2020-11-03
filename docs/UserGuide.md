@@ -61,7 +61,7 @@ This guide provides you with in-depth information on setting up AniChan and how 
 1.  Ensure that you have Java 11 or above installed.
 2.  Download the latest version of **AniChan** from [here](https://github.com/AY2021S1-CS2113T-F12-2/tp/releases/tag/V2.0).
 3.  Copy the file to the folder you want to use as the home folder for **AniChan**.
-4.  Open **Command Prompt** and change directory into the folder. Run `java -jar AniChan.jar`.
+4.  Open **command prompt** or **terminal** and change directory into the folder. Run `java -jar AniChan.jar`.
 5.  Type a command into the command prompt and press `Enter` to execute it. For example, typing `help` and pressing `Enter` will display the help message.
 
 <br/>
@@ -78,10 +78,10 @@ E.g. In `browse -s <SORT_CATEGORY> -p <PAGE_NO.>`, `SORT_CATEGORY` and `PAGE_NO.
 *   Angle brackets (`<MANDATORY>`) are mandatory, while square brackets (`[OPTIONAL]`) are optional. <br/>
 E.g. `estimate <SCRIPT_NAME> [-t WORDS_PER_HOUR]` can be used as `estimate script.txt` or `estimate script.txt -wph 300`.
 
-*   Order of options (`-n`, `-l`, etc.) are not important, but they have to be defined after the non-option fields. <br/>
-E.g. Both `browse -s name -p 2` and `browse -p 2 -s name` gives the same result, but in the case of `estimate script.txt -wph 300` and `estimate -wph 300 script.txt`, the latter will not work because "script.txt" is not an option.
+*   Order of parameters (`-n`, `-l`, etc.) are not important, but they have to be defined after the non-parameter fields. <br/>
+E.g. Both `browse -s name -p 2` and `browse -p 2 -s name` gives the same result, but in the case of `estimate script.txt -wph 300` and `estimate -wph 300 script.txt`, the latter will not work because "script.txt" is not an parameter.
 
-> :bulb: This is what your input prompt means: **WORKSPACE-NAME (WATCHLIST-NAME) #>**
+> :bulb: This is what the input prompt means: **WORKSPACE-NAME (WATCHLIST-NAME) #>**
 
 <br/>
 
@@ -94,14 +94,16 @@ Format: `help`
 <br/>
 
 ### 3.2 Estimate time needed to translate the script
-This command allows you to figure out the amount of time needed to finish translating a script. It allows you to estimate based on the amount of words you can translate in an hour, or by using the average translators’ speed of 400, 500, and 600 words per hour. Hence, this would help you to better manage your time and also to not promise your clients with inaccurate timings.
+This command allows you to estimate the time needed to translate a script. It estimates based on the amount of words you can translate in an hour, or by using the average translators’ speed of 400, 500, and 600 words per hour. Hence, this would allow you to better manage and plan your time.
 
 Format: `estimate <SCRIPT_FILE_NAME> [-wph WORDS_PER_HOUR]`
-*   If the option `-wph` is not specified, the average translator's translation speed will be used to produce three estimation timings for you to consider.
+*   It only accepts one `.txt` file (other file extensions will be supported in a future version).
+*   If the parameter `-wph` is not specified, the average translator's speed will be used to generate three estimations for you to consider.
 
-> :bulb: You have to specify the file extension too. For example, `script.txt`.
+> :bulb: Remember to specify the file extension. For example, `script.txt` and not `script`.
 
-> :bulb: Ensure the script file is in your workspace folder. For example, from the folder where `AniChan.jar` is located, if your current workspace name is "Default" (indicated in the input prompt), place the script file in the subfolder named "Default" of the "data" folder (i.e. `data/Default/script.txt`).
+> :bulb: Put the script in the current workspace folder. If the current workspace is "Default", then from the folder containing `AniChan.jar`, put it in the subfolder named "Default" of the "data" folder (i.e. `data/Default/script.txt`) as shown in the diagram below. 
+> <br/><br/> ![Estimate Folder Structure Diagram](images/Estimate-Folder-Structure-Diagram.png)
 
 <br/>
 
@@ -142,30 +144,30 @@ Here are some commonly used `browse` commands to get you started. Feel free to e
 
 <br/>
 
-Example of usage: `browse -s name -o dsc`
+Example of usage: `browse -s name -o asc`
 
 The expected outcome:
 ```
-1. .hack//Gift
-2. .hack//Legend Of The Twilight
-3. .hack//Liminality
-4. .hack//Sign
-5. 3x3 Eyes
-6. A Chinese Ghost Story
-7. ARIA The ANIMATION
-8. Abashiri Ikka
-9. Ace wo Nerae!
-10. Ace wo Nerae! 2
-11. Ace wo Nerae: Final Stage
-12. After War Gundam X
-13. Agatha Christie's Great Detectives Poirot and Marple
-14. Agent Aika
-15. Ah! My Goddess: The Movie
-16. Ai Yori Aoshi
-17. Ai Yori Aoshi: Enishi
-18. Aim for the Ace! (1979)
-19. Air
-20. Air Master
+1.   .hack//Gift                                         [Id: 413]
+2.   .hack//Legend Of The Twilight                       [Id: 267]
+3.   .hack//Liminality                                   [Id: 268]
+4.   .hack//Sign                                         [Id: 30 ]
+5.   3x3 Eyes                                            [Id: 269]
+6.   A Chinese Ghost Story                               [Id: 284]
+7.   ARIA The ANIMATION                                  [Id: 436]
+8.   Abashiri Ikka                                       [Id: 274]
+9.   Ace wo Nerae!                                       [Id: 280]
+10.  Ace wo Nerae! 2                                     [Id: 283]
+11.  Ace wo Nerae: Final Stage                           [Id: 281]
+12.  After War Gundam X                                  [Id: 72 ]
+13.  Agatha Christie's Great Detectives Poirot and Ma... [Id: 213]
+14.  Agent Aika                                          [Id: 333]
+15.  Ah! My Goddess: The Movie                           [Id: 273]
+16.  Ai Yori Aoshi                                       [Id: 35 ]
+17.  Ai Yori Aoshi: Enishi                               [Id: 360]
+18.  Aim for the Ace! (1979)                             [Id: 282]
+19.  Air                                                 [Id: 81 ]
+20.  Air Master                                          [Id: 199]
 Browsing Page: 1
 ```
 
@@ -202,6 +204,15 @@ The expected outcome:
 Search for anime that has the genre matching the search term.
 
 Format: `search -g <SEARCH_TERM>`
+
+<br/>
+
+Here are some of the popular genres that you can try:
+*   Action
+*   Adventure
+*   Music
+*   Mecha
+*   Sci-Fi
 
 <br/>
 
@@ -332,7 +343,7 @@ Successfully deleted workspace: Default
 <!-- @@author -->
 
 ### 3.7 Watchlist management
-The watchlist management feature provide translators with a simple way to keep track of animes and group them based on their own definition and criteria. This enables translators to stay organized, productive, and focus on their work rather than being concerned over irrelevant issues.
+The watchlist management feature provide translators with a simple way to keep track of animes and group them based on their own criteria. This enables translators to stay organized, productive, and focus on their work rather than being concerned over irrelevant issues.
 
 The following subsections below describes the various watchlist-relation operations.
 
@@ -345,7 +356,8 @@ Creates a new watchlist to keep track of anime(s).
 
 Format: `watchlist -n <WATCHLIST_NAME>`
 
-> :warning: Watchlist name has to be unique in your workspace.
+> :bulb: Watchlist name can only consist of alphanumeric characters and/or spaces.
+> :warning: Watchlist name has to be unique in the workspace.
 
 <br/>
 

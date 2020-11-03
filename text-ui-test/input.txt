@@ -67,7 +67,11 @@ watchlist -n a
 watchlist -n b
 watchlist -n ops
 watchlist -s 4
+watchlist -s -1
+watchlist -s one
 watchlist -d 4
+watchlist -d -1
+watchlist -d one
 watchlist -l
 add -a 1
 add -a 3
@@ -162,4 +166,16 @@ workspace -d  COOKIES N CREME CH33SECAKE
 workspace -d  COOKIES N CREME CH33SECAKE
 workspace -d Default
 workspace -l
+browse -
+browse -
+browse -o
+browse -o
+browse -o a
+browse -o    asc
+browse      -o asc
+browse      -o     asc
+browse -      o asc -p           2             -aas
+browse -o asc -p 2 --
+browse ---
+browse -s rating-o asc
 exit

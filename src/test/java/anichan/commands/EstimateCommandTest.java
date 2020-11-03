@@ -58,11 +58,11 @@ class EstimateCommandTest {
     @Test
     void execute_validParameters_success() throws AniException {
         // Words per hour (wph) not specified.
-        String expectedNoWphResult = "Average translator (400 words per hour) takes: 5 hour(s) 47 minute(s).";
+        String expectedNoWphResult = "Average translator (400 words per hour) takes: 8 hour(s) 1 minute(s).";
         expectedNoWphResult += System.lineSeparator();
-        expectedNoWphResult += "Average translator (500 words per hour) takes: 4 hour(s) 38 minute(s).";
+        expectedNoWphResult += "Average translator (500 words per hour) takes: 6 hour(s) 25 minute(s).";
         expectedNoWphResult += System.lineSeparator();
-        expectedNoWphResult += "Average translator (600 words per hour) takes: 3 hour(s) 51 minute(s).";
+        expectedNoWphResult += "Average translator (600 words per hour) takes: 5 hour(s) 20 minute(s).";
 
         EstimateCommand noWph = new EstimateCommand(SCRIPT_FILE_NAME, NO_WORDS_PER_HOUR_PROVIDED);
         String noWphResult = noWph.execute(animeData, validSM, user);
@@ -71,10 +71,10 @@ class EstimateCommandTest {
         // Words per hour specified (with hours and minutes).
         EstimateCommand wphWithHoursAndMinutes = new EstimateCommand(SCRIPT_FILE_NAME, 777);
         String wphWithHoursAndMinutesResult = wphWithHoursAndMinutes.execute(animeData, validSM, user);
-        assertEquals("You would need 2 hour(s) 58 minute(s).", wphWithHoursAndMinutesResult);
+        assertEquals("You would need 4 hour(s) 7 minute(s).", wphWithHoursAndMinutesResult);
 
         // Words per hour specified (with only hours).
-        EstimateCommand wphWithOnlyHours = new EstimateCommand(SCRIPT_FILE_NAME, 2288);
+        EstimateCommand wphWithOnlyHours = new EstimateCommand(SCRIPT_FILE_NAME, 3205);
         String wphWithOnlyHoursResult = wphWithOnlyHours.execute(animeData, validSM, user);
         assertEquals("You would need 1 hour(s).", wphWithOnlyHoursResult);
     }

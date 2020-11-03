@@ -7,29 +7,29 @@
 <br/>
 
 ## Table of Content
-1. [Introduction](#1-introduction)
+1.  [Introduction](#1-introduction)
 <br/>&nbsp;1.1 [Purpose](#11-purpose)
 
-2. [Setting up](#2-setting-up)
-3. [Design](#3-design)
-<br/>&nbsp;3.1 [Architecture](#31-architecture)
-<br/>&nbsp;3.2 [UI Component](#32-ui-component)
-<br/>&nbsp;3.3 [Parser Component](#33-parser-component)
-<br/>&nbsp;3.4 [Command Component](#34-command-component)
-<br/>&nbsp;3.5 [AnimeData Component](#35-animedata-component)
-<br/>&nbsp;3.6 [User Component](#36-user-component)
-<br/>&nbsp;3.7 [Storage Component](#37-storage-component)
+2.  [Setting up](#2-setting-up)
+3.  [Design](#3-design)
+<br/>&nbsp;3.1  [Architecture](#31-architecture)
+<br/>&nbsp;3.2  [UI Component](#32-ui-component)
+<br/>&nbsp;3.3  [Parser Component](#33-parser-component)
+<br/>&nbsp;3.4  [Command Component](#34-command-component)
+<br/>&nbsp;3.5  [AnimeData Component](#35-animedata-component)
+<br/>&nbsp;3.6  [User Component](#36-user-component)
+<br/>&nbsp;3.7  [Storage Component](#37-storage-component)
 
-4. [Implementation](#4-implementation)
-<br/>&nbsp;4.1 [Estimate Feature](#41-estimate-feature)
-<br/>&nbsp;4.2 [Browse Feature](#42-browse-feature)
-<br/>&nbsp;4.3 [View Anime Information Feature](#43-view-anime-information-feature)
-<br/>&nbsp;4.4 [Workspace Feature](#44-workspace-feature)
-<br/>&nbsp;4.5 [Watchlist Management Feature](#45-watchlist-management-feature)
-<br/>&nbsp;4.6 [Add To Watchlist Feature](#46-add-to-watchlist)
-<br/>&nbsp;4.7 [Remove From Watchlist Feature](#47-remove-from-watchlist)
-<br/>&nbsp;4.8 [View Anime In Watchlist Feature](#48-view-all-anime-in-watchlist)
-<br/>&nbsp;4.9 [Bookmark Feature](#49-bookmark-feature)
+4.  [Implementation](#4-implementation)
+<br/>&nbsp;4.1  [Estimate Feature](#41-estimate-feature)
+<br/>&nbsp;4.2  [Browse Feature](#42-browse-feature)
+<br/>&nbsp;4.3  [View Anime Information Feature](#43-view-anime-information-feature)
+<br/>&nbsp;4.4  [Workspace Feature](#44-workspace-feature)
+<br/>&nbsp;4.5  [Watchlist Management Feature](#45-watchlist-management-feature)
+<br/>&nbsp;4.6  [Add To Watchlist Feature](#46-add-to-watchlist)
+<br/>&nbsp;4.7  [Remove From Watchlist Feature](#47-remove-from-watchlist)
+<br/>&nbsp;4.8  [View Anime In Watchlist Feature](#48-view-all-anime-in-watchlist)
+<br/>&nbsp;4.9  [Bookmark Feature](#49-bookmark-feature)
 
 5.  [Documentation, Logging, Testing, and DevOps](#5-documentation-logging-testing-and-devops)
 <br/>&nbsp;5.1 [Documentation](#51-documentation)
@@ -42,6 +42,8 @@
 [Appendix B: User Stories](#appendix-b-user-stories)
 
 [Appendix C: Non-Functional Requirements](#appendix-c-non-functional-requirements)
+
+[Appendix D: Instructions For Manual Testing](#appendix-d-instructions-for-manual-testing)
 
 <br/>
 
@@ -64,22 +66,22 @@ Ensure that you have the following installed:
 Firstly, **fork** this repo and **clone** a copy into your computer.
 
 If you plan to use Intellij IDEA: 
-1. **Ensure IntelliJ is configured to use JDK 11**.
-    1. Click on `Configure` > `Structure for New Projects` > `Project Settings` > `Project`, 
-       and ensure the `Project SDK` is using **JDK 11**.
-2. **Import the project as a Gradle project**.
-    1. Click on `Import Project` and locate the `build.gradle` file and select it. Click `OK`
-    2. If asked, choose to `Open as Project` (not `Open as File`).
-    3. Click `OK` to accept the default settings but do ensure that the selected version of `Gradle JVM` matches the JDK being used for the project.
-    4. The import process could take a few minutes to finish.
-3. **Verify the setup**: 
-    1. Run the `seedu.anichan.Main` and try a few commands. 
-    2. You may want to refer to our [User Guide](UserGuide.md) for the list of commands.
+1.  **Ensure IntelliJ is configured to use JDK 11**.
+    1.  Click on `Configure` > `Structure for New Projects` > `Project Settings` > `Project`, and ensure the `Project SDK` is using **JDK 11**.
 
-----
+2.  **Import the project as a Gradle project**.
+    1.  Click on `Import Project` and locate the `build.gradle` file and select it. Click `OK`
+    2.  If asked, choose to `Open as Project` (not `Open as File`).
+    3.  Click `OK` to accept the default settings but do ensure that the selected version of `Gradle JVM` matches the JDK being used for the project.
+    4.  The import process could take a few minutes to finish.
+
+3.  **Verify the setup**: 
+    1.  Run `Main.main()` and try a few commands.
+    2.  You may want to refer to our [User Guide](UserGuide.md) for the list of commands supported by **AniChan**.
+
+<br/>
 
 ### 2.2 Before writing code
-
 #### 2.2.1 Configuring the Coding Style
 
 If using IDEA, follow this guide [IDEA: Configuring the code style](https://se-education.org/guides/tutorials/intellijCodeStyle.html) to setup IDEA’s coding style to match ours.
@@ -129,18 +131,24 @@ The rest of **AniChan** consists of 6 components:
 
 <br/>
 
-Below is an overall sequence diagram to help illustrate the general program flow and how the different objects interact with each other.
+Below are some example sequence diagram to help illustrate the general program flow and how the different objects interact with each other.
+
+The first sequence diagram shows the program flow of starting AniChan as an existing user.
+![Starting Sequence Diagram](images/Starting-Sequence-Diagram.png) <br/>
+*Figure 2: Starting Up Sequence Diagram*
 
 <br/>
 
-![Main Sequence Diagram](images/Overall-Sequence-Diagram.png) <br/>
-*Figure 2: Overall Sequence Diagram*
+The next sequence diagram shows an example command execution.
+
+![Command Execution Sequence Diagram](images/Command-Execution-Sequence-Diagram.png) <br/>
+*Figure 3: Command Execution Sequence Diagram*
  
 <br/>
 
 ### 3.2 UI Component
 ![UI Class Diagram](images/Ui-Class-Diagram.png) <br/>
-*Figure 3: UI Class Diagram*
+*Figure 4: UI Class Diagram*
 
 The UI component consists of a `UI` class that handles all user input and system output. The UI is only dependent on the `Main` class and does not interact directly with other classes ensuring high cohesiveness and separation of roles.
 
@@ -152,7 +160,7 @@ The `Ui` component listens for:
 
 ### 3.3 Parser Component
 ![Parser Class Diagram](images/Parser-Class-Diagram.png) <br/>
-*Figure 4: Parser Class Diagram*
+*Figure 5: Parser Class Diagram*
 
 The `Parser` component consists of a `Parser` class and multiple `XYZParser` each representing a specific command’s parser. The Parser class will first receive a user command from `Main` and will proceed to determine the command type.
 
@@ -166,7 +174,7 @@ Example: If Browse command was parsed, `Parser` will create `BrowseParser`.
 
 ### 3.4 Command Component
 ![Command Class Diagram](images/Command-Class-Diagram.png) <br/>
-*Figure 5: Command Class Diagram*
+*Figure 6: Command Class Diagram*
 
 The `Command` component consists of different commands represented together as `XYZCommand` which all inherits from the abstract `Command` class. 
 
@@ -178,7 +186,7 @@ Example: The Browse command would be represented by a `BrowseCommand`.
 
 ### 3.5 AnimeData Component
 ![AnimeData Class Diagram](images/AnimeData-Class-Diagram.png) <br/>
-*Figure 6: AnimeData Class Diagram*
+*Figure 7: AnimeData Class Diagram*
 
 The `AnimeData` component is responsible for retrieving offline json data and parsing it into `Anime` objects that will be stored in program memory. The `AnimeData` will manage an ArrayList of `Anime` objects providing **AniChan** with an interface for the program to retrieve with the source data.
 
@@ -192,7 +200,7 @@ The `AnimeData `component:
 <!-- @@author ChanJianHao -->
 ### 3.6 User Component
 ![User Class Diagram](images/User-Class-Diagram.png) <br/>
-*Figure 7: User Class Diagram*
+*Figure 8: User Class Diagram*
 
 The User inherits from the abstract `Human` class and stores the name and gender of the user. It represents the user's interaction with `Workspace` class.
 
@@ -211,7 +219,7 @@ The `Workspace` component:
 
 ### 3.7 Storage Component
 ![Storage Class Diagram](images/Storage-Class-Diagram.png) <br/>
-*Figure 8: Storage Class Diagram*
+*Figure 9: Storage Class Diagram*
 
 The `Storage` component consist of `StorageManager` which:
 *   can **save** workspace created by the user as a folder.
@@ -266,7 +274,7 @@ The sequence diagram presented below depicts the interaction between the compone
 
 ![EstimateCommand Sequence Diagram](images/EstimateCommand-Sequence-Diagram.png)
 
-*Figure 9: Sequence Diagram for `estimate script.txt -wph 300`*
+*Figure 10: Sequence Diagram for `estimate script.txt -wph 300`*
 
 <br/>
 
@@ -314,8 +322,9 @@ These are the two fundamental operations that will carry out the execution of th
 it can still perform a default browse and return relevant useful information.
 
 Before going any further, please refer to this helpful table of the `BrowseCommand` parameters for reference.
+These are the attributes that will define the scope of a browse command.
 
-| Attribute | Option | Function          |
+| Attribute | Value  | Function          |
 | ---       | ---    | ---               |
 | order     | 0      | Ascending         |
 | order	    | 1      | Descending        |
@@ -346,7 +355,7 @@ For this case since it is a default browse operation, there is no sorting perfor
 `Anime objects within the page window, as shown in the diagram below.
 
 ![Browse Object Diagram 1](images/Browse-Default-State.png) <br/>
-*Figure 10: Browse Default State Object Diagram*
+*Figure 11: Browse Default State Object Diagram*
 
 In this example, it fetches the following `Anime` objects.
 ```text
@@ -359,7 +368,7 @@ If the 2nd page of the list was requested instead with the command `browse -p 2`
 `BrowseCommand#buildBrowseOutput()` will shift its page window down by 1 page as depicted in the diagram below.
 
 ![Browse Object Diagram 2](images/Browse-Default-State2.png) <br/>
-*Figure 11: Browse Next Page Object Diagram*
+*Figure 12: Browse Next Page Object Diagram*
 
 **Step 5:** At each `Anime` object, it will access its methods to get the relevant information about that anime series and construct a printable result for the user to view.
 
@@ -373,7 +382,7 @@ An example scenario would be browsing the 2nd page of a **sorted** list in ascen
 The only step that would change would be at Step 3, where it will perform sorting of `AnimeData` list. 
 
 ![Browse Object Diagram 3](images/Browse-Sorted-State.png) <br/>
-*Figure 12: Browse Sorted State Object Diagram*
+*Figure 13: Browse Sorted State Object Diagram*
 
 As you can see, even though the page window is at the same position as the previous command, 
 the list is different as it has been sorted.
@@ -383,7 +392,7 @@ From this point onwards, the operation will continue as per the steps above but 
 Here is the sequence diagram to better illustrate the lifecycle of a browse command.
 
 ![Browse Sequence Diagram](images/Browse-SequenceDiagram.png) <br/>
-*Figure 13: Browse Sorted Sequence Diagram*
+*Figure 14: Browse Sorted Sequence Diagram*
 
 <br/>
 
@@ -396,29 +405,29 @@ The first design consideration was how the sorting should be carried out. The ma
 
 | Approach | Pros | Cons  |
 | --- | --- | --- |
-| 1. Leaving the list unsorted                    | - No complexity and fastest approach  | - List will be unsorted and may cause confusion to users |
-| 2. Resorting the list again                     | - The list will be back into its original form before browsing    | - May hinder performance as resorting could take time <br/> - Requires altering of the main list |
-| 3. Cloning a duplicate animeData object to sort | - The list will be back to its original form <br/> - The main list will not be affected at all | - Expensive operation that will require large storage and time complexity |
+| 1. Leaving the list unsorted        | - No complexity and fastest approach  | - List will be unsorted and may cause confusion to users |
+| 2. Resorting the list again         | - The list will be back into its original form before browsing    | - May hinder performance as resorting could take time <br/> - Requires altering of the main list |
+| 3. Cloning a duplicate list to sort | - The list will be back to its original form <br/> - The main list will not be affected at all | - Expensive operation that will require large storage and time complexity |
 
-Currently, the 2nd approach is being used with the following rationale. While the 1st approach is the fastest, the consequence of 
-leaving the main list unsorted is too great and may produce a lot of uncertain results as well as confuse the user. 
-Although the 3rd approach provides the best benefit, its complexity may end up violating the project’s memory limit constraint if the list is large. 
-Therefore, the 2nd approach was chosen, as its performance cost outweighs the other approaches cons.  
+While the 1st approach is the fastest, the consequence of leaving the main list unsorted is too great and may produce a 
+lot of uncertain results as well as confuse the user. Although the 3rd approach provides the best benefit, 
+its complexity may end up violating the project’s memory limit constraint if the list is large. 
+Therefore, the 2nd approach was adopted, as its performance cost outweighs the others.
 
 Aspect: **Should the program use an interactive or static browsing approach**
 
-The second design consideration was how to carry out the page by page browsing as shown above. 
-The main issue was the cohesiveness between components.
+The second design consideration was how to carry out the page by page browsing as demonstrated above.
+The main concern here was cohesiveness and interactivity.
 
 | Approach | Pros | Cons  |
 | --- | --- | --- |
 | 1. Interactive browsing, users can `flip` pages and `pick` to view specific anime | - Fluid and seamless browsing session. <br/>- Very good usability. | - Would require `BrowseCommand` to get user input. |
 | 2. Static browsing, users specify the page they want to access. | - Completely decoupled from Ui component <br/>- Allows for browse to be more precise in finding what the user wants |  - Not as seamless as the first approach but still usable. |
 
-Though the 1st approach could have created a more authentic browsing feature it would not fit the requirements as well as the 
-2nd approach. The 2nd approach allows for more precise browsing of pages means that more experienced users are able to utilise the 
-tool quicker and to the same effect as the first approach. As a result, the 2nd approach was chosen as a better fit of the requirements 
-and in favour of having an application that is highly object-oriented.
+Though the 1st approach could have created a more authentic browsing feature it is not a good fit of the OOP requirements.
+While the 2nd approach allows for more precise browsing of pages means that more experienced users are able to utilise the 
+tool quicker and to the same effect as the first approach. 
+As a result, the 2nd approach was adopted in favour of having an application that is highly object-oriented.
 
 <br/>
 
@@ -441,7 +450,7 @@ Given below is an example of the usage scenario of view information command and 
 Figure 14 below shows the sequence diagram for steps 1 to 3 of the Information feature
 
 ![Info Command Step 1 to 3 Sequence Diagram](images/InfoCommand-Step1-3-Sequence-Diagram.png) <br/>
-*Figure 14: Info feature steps 1 to 3 sequence diagram*
+*Figure 15: Info feature steps 1 to 3 sequence diagram*
 
 **Step 4:** `Main` will then call `InfoCommand#execute()`. In here the ANIME_ID will be validated and `AnimeData#returnAnimeInfo()` method is invoked, returning a string containing information regarding that particular ANIME_ID.
 
@@ -452,7 +461,7 @@ Figure 14 below shows the sequence diagram for steps 1 to 3 of the Information f
 The diagram below is the sequence diagram from steps 4 onward.
 
 ![Info Command Step 4 to 6 Sequence Diagram](images/InfoCommand-Step4-6-Sequence-Diagram.png) <br/>
-*Figure 15: Info feature steps 4 to 6 sequence diagram*
+*Figure 16: Info feature steps 4 to 6 sequence diagram*
 
 #### 4.3.2 Design Consideration
 This section shows the considerations taken when designing this feature.
@@ -503,7 +512,7 @@ to **create new** `Workspace`:
 **Step 1:** User launches the application for the first time. The `User` will be initialized with an initial `Workspace` named `Default`, and the `activeWorkspace` pointing to it and `workspaceList` `ArrayList` containing it.
 
 ![Workspace Command Initial State Diagram](images/WorkspaceCommand-Initial-State.png) <br/>
-*Figure 16: Workspace Command Initial State*
+*Figure 17: Workspace Command Initial State*
 
 <br/>
 
@@ -517,7 +526,7 @@ to **create new** `Workspace`:
 Finally, it uses `storageManager#saveWorkspace()` to save the `Workspace` to disk.
 
 ![Workspace Command After Creation Diagram](images/WorkspaceCommand-After-Create.png) <br/>
-*Figure 17: Workspace Command After New Workspace Creation*
+*Figure 18: Workspace Command After New Workspace Creation*
 
 <br/>
 
@@ -531,14 +540,14 @@ The following diagrams will continue **from step 6**, and will illustrate the ch
 **Step 7:** User keys in `workspace -s Netflix Animation Studio` to switch active workspace.
 
 ![Workspace Command After Switch Diagram](images/WorkspaceCommand-After-Switch.png) <br/>
-*Figure 18: Workspace Command After Workspace Switch*
+*Figure 19: Workspace Command After Workspace Switch*
 
 <br/>
 
 **Step 8:** User keys in `workspace -d Default` to delete the workspace named `Default`.
 
 ![Workspace Command After Switch Diagram](images/WorkspaceCommand-After-Delete.png) <br/>
-*Figure 19: Workspace Command After New Workspace Delete*
+*Figure 20: Workspace Command After New Workspace Delete*
 
 <br/>
 
@@ -547,7 +556,7 @@ The following sequence diagram illustrates how `Workspace` creation in the examp
 > :memo: The other options (`-s`, `-l`, `-d`) follows a similar process, only the list and switch option does not interact with `StorageManager` and `Watchlist`.
 
 ![Workspace Command Sequence Diagram](images/WorkspaceCommand-Sequence-Diagram.png) <br/>
-*Figure 20: Workspace Command After New Workspace Delete*
+*Figure 21: Workspace Command After New Workspace Delete*
 
 <br/>
 
@@ -624,7 +633,7 @@ Given below is an example usage scenario showing how the `WatchlistCommand` beha
 
 ![WatchlistCommand Initial State](images/WatchlistCommand-Initial-State.png)
 
-*Figure 21: WatchlistCommand Initial State*
+*Figure 22: WatchlistCommand Initial State*
 
 **Step 1:** User executes the command `watchlist -n NewAnime`. The application invokes `Parser#getCommand()` and because the command type is "watchlist", `WatchlistParser#parse()` is invoked to parse, validate, and construct `WatchlistCommand` with "-n" and "NewAnime". The created object is then returned to `Main`.
 
@@ -646,7 +655,7 @@ Given below is an example usage scenario showing how the `WatchlistCommand` beha
 
 ![WatchlistCommand After Create State](images/WatchlistCommand-After-Create-State.png)
 
-*Figure 22: WatchlistCommand After Create State*
+*Figure 23: WatchlistCommand After Create State*
 
 <br/>
 
@@ -657,7 +666,7 @@ All the other options in the watchlist command also follows a similar execution 
 
 ![WatchlistCommand After Select State](images/WatchlistCommand-After-Select-State.png)
 
-*Figure 23: WatchlistCommand After Select State*
+*Figure 24: WatchlistCommand After Select State*
 
 <br/>
 
@@ -665,7 +674,7 @@ All the other options in the watchlist command also follows a similar execution 
 
 ![WatchlistCommand After Delete State](images/WatchlistCommand-After-Delete-State.png)
 
-*Figure 24: WatchlistCommand After Delete State*
+*Figure 25: WatchlistCommand After Delete State*
 
 <br/>
 
@@ -676,7 +685,7 @@ The sequence diagram presented below depicts the interaction between the compone
 
 ![WatchlistCommand Create Watchlist Sequence Diagram](images/WatchlistCommand-CreateWatchlist-Sequence-Diagram.png)
 
-*Figure 25: Sequence Diagram for `watchlist -n NewAnime`*
+*Figure 26: Sequence Diagram for `watchlist -n NewAnime`*
 
 <br/>
 
@@ -726,7 +735,7 @@ Below is an example usage scenario of how add to watchlist command behaves at ea
 The figure below shows the sequence diagram of steps 1 to 3.
 
 ![Add To Watchlist Command Step 1 to 3](images/AddToWatchlist-Step1-3-Sequence-Diagram.png) <br/>
-*Figure 26: Sequence diagram for Add To Watchlist feature steps 1 to 3*
+*Figure 27: Sequence diagram for Add To Watchlist feature steps 1 to 3*
 
 **Step 4:** `AddToWatchlistCommand#execute()` is then invoked in `Main`, which retrieve the active `workspace` through `AddToWatchlistCommand#getActiveWorkspace()`, and `Watchlist` object from `ActiveWorkspace#getActiveWatchlist()`.
 
@@ -737,7 +746,7 @@ The figure below shows the sequence diagram of steps 1 to 3.
 For better illustration, Figure 27 below shows the sequence diagram of steps 4 to 6.
 
 ![Add To Watchlist Command Step 4 to 6](images/AddToWatchlist-Step4-6-Sequence-Diagram.png) <br/>
-*Figure 27: Sequence diagram for Add To Watchlist feature steps 4 to 6*
+*Figure 28: Sequence diagram for Add To Watchlist feature steps 4 to 6*
 
 #### 4.6.2 Design consideration
 Below shows the considerations taken when implementing the `AddToWatchlist` feature. 
@@ -797,7 +806,7 @@ An example usage scenario on how view anime in watchlist behaves is given below.
 
 The sequence diagram for steps 1 to 4 is as shown in the figure below.
 ![View Watchlist Command Step 1 to 4](images/ViewWatchlist-Step1-4-Sequence-Diagram.png) <br/>
-*Figure 28: Sequence diagram for View Watchlist feature steps 1 to 4*
+*Figure 29: Sequence diagram for View Watchlist feature steps 1 to 4*
 
 **Step 5:** The `ViewWatchlistCommand#execute()` would then be called by `Main`, in which the WATCHLIST_ID will be validated.
 
@@ -807,7 +816,7 @@ The sequence diagram for steps 1 to 4 is as shown in the figure below.
 
 The figure below is the sequence diagram for steps 5 to 7
 ![View Watchlist Command Step 5 to 7](images/ViewWatchlist-Step5-7-Sequence-Diagram.png) <br/>
-*Figure 29: Sequence diagram for View Watchlist feature steps 5 to 7*
+*Figure 30: Sequence diagram for View Watchlist feature steps 5 to 7*
 
 <br/>
 
@@ -822,7 +831,7 @@ The `bookmark` feature aims to provide the user with the ability to create short
 The Bookmark class uses three ArrayList to store bookmark entries of the user, these arraylists maintain information about the anime index, episode and notes. The synchronisation between arraylist is required so that it enables easy retrieval of bookmark information using the bookmark index on the three arraylist.
 
 ![Bookmark Class Diagram](images/Bookmark-Class-Diagram.png) <br/>
-*Figure 30: Bookmark Class Diagram*
+*Figure 31: Bookmark Class Diagram*
 
 `BookmarkCommand` is instantiated by `BookmarkParser`, and requires a mandatory BookmarkAction. With the BookmarkAction the parser will determine the required field for the BookmarkCommand. Below table shows the required field for each action:
 
@@ -864,19 +873,19 @@ Below is a list of bookmark operations:
 **Step 4:** The user executes `bookmark -a 430` command to add the anime id: 3 into the bookmark. `Bookmark#addAnimeBookmark()` will then add the anime index to the ArrayList within the bookmark.
 
 ![Bookmark State After Add Diagram](images/Bookmark-After-Step4.png) <br/>
-*Figure 31: Bookmark Entry After Add*
+*Figure 32: Bookmark Entry After Add*
 
 > :memo: The table shows the three ArrayList objects in the column with the bookmark id. When adding a new anime id into the bookmark, the bookmark will initialise the anime episode to be 0 together with an empty note object.
 
 **Step 4.5:** The user executes `bookmark -a 1` and `bookmark -a 410` to add anime id 1 and 410 to the bookmark.
 
 ![Bookmark State After More Add Diagram](images/Bookmark-After-Step4.5.png) <br/>
-*Figure 32: Bookmark Entries with more Add*
+*Figure 33: Bookmark Entries with more Add*
 
 The following sequence diagram shows how the `Add Bookmark` operation works:
 
 ![Bookmark Add Command Sequence Diagram](images/Bookmark-Add-Sequence-Diagram.png) <br/>
-*Figure 33: Bookmark Add Command Sequence Diagram*
+*Figure 34: Bookmark Add Command Sequence Diagram*
 
 **Step 5:** The user executes `bookmark -l` command to list all anime within the bookmark. `Bookmark#getListInString()` will use the Anime index stored in the bookmark list and retrieve the anime name from AnimeData, the method then returns the bookmark index with the anime name.
 
@@ -890,19 +899,19 @@ Listing all anime in bookmark:
 **Step 6:** The user executes `bookmark -d 1` command to delete the bookmark entry at bookmark id: 1. `Bookmark#deleteAnimeBookmark()` will then remove the Bookmark index from the `Bookmark`.
 
 ![Bookmark State After Delete Diagram](images/Bookmark-After-Step6.png) <br/>
-*Figure 34: Bookmark Entries After Delete*
+*Figure 35: Bookmark Entries After Delete*
 
 > :memo: The ArrayList comes with an inbuilt function to enable easy deletion at index, but the bookmark index of subsequent entries will decrease.
 
 **Step 7:** The user executes `bookmark 1 -e 5` command to edit the episode for the first bookmark entry. `Bookmark#editBookmarkEpisode()` will change the episode field for that bookmark entry.
 
 ![Bookmark State After Edit Episode Diagram](images/Bookmark-After-Step7.png) <br/>
-*Figure 35: Bookmark Entries After Edit Episode*
+*Figure 36: Bookmark Entries After Edit Episode*
 
 **Step 8:** The user executes `bookmark 1 -n Schedule push back` command to add a note for a bookmark entry. `Bookmark#addNote()' will then add a note to the bookmark entry at bookmark id:1.
 
 ![Bookmark State After Add Note Diagram](images/Bookmark-After-Step8.png) <br/>
-*Figure 36: Bookmark Entries After Add Note*
+*Figure 37: Bookmark Entries After Add Note*
 
 **Step 9:** The user executes `bookmark 1` command to view all information of the first bookmark entry. The command will use `Bookmark#getAnimeInfoFromBookmark()` to retrieve the detailed anime info for the anime id at that bookmark, `Bookmark#getBookmarkEpisode()` for the tracked episode by the user and `Bookmark#getAnimeNotesFromBookmark()` will retrieve all notes in a list format. With all the relevant information on the bookmark entry, the result will be displayed to the user (Figure 26: Bookmark Entries After Edit Episode).
 
@@ -924,7 +933,7 @@ Notes for anime:
 **Step 10:** The user executes `bookmark 1 -r 1` command to remove a note from a bookmark entry. `Bookmark#removeNote()` will remove the note id:1 from the first bookmark entry. The resulting state of the remove note command will look exactly the same to the state before the note was added.
 
 ![Bookmark State After Edit Episode Diagram](images/Bookmark-After-Step7.png) <br/>
-*Figure 37: Bookmark Entries After Edit Episode*
+*Figure 38: Bookmark Entries After Edit Episode*
 
 <br/>
 
@@ -1069,7 +1078,7 @@ If you wish to add new checks, simply add the check file with a filename `check-
 *   Organize anime into different watchlists for different genres.
 *   Portable and works offline.
 
-{*More coming soon*}
+<br/>
 
 ## Appendix B: User Stories
 
@@ -1086,18 +1095,120 @@ If you wish to add new checks, simply add the check file with a filename `check-
 | v1.0 | freelance translator | be able to create new workspaces | can have a clear separation of my work at different companies |
 | v1.0 | freelance translator | switch between workspaces | can swap my workspace to a specific company that my current project is tied to |
 | v1.0 | forgetful user | bookmark specific anime | remember which anime I am currently interested in |
-| v1.0 | forgetful user | set an episode for each bookmarked anime | remember which episode I'm watching or translating |
-| v2.0 | translator | write notes for a bookmark | So that I can remember helpful information regarding a specific anime series |
-| v2.0 | translator | remove notes for a bookmark | So that I can remove outdated information or mistakes in my notes |
+| v1.0 | forgetful user | set an episode for each bookmarked anime | can remember which episode I'm watching or translating |
+| v2.0 | translator | write notes for a bookmark | can remember helpful information regarding a specific anime series |
+| v2.0 | translator | remove notes for a bookmark | can remove outdated information or mistakes in my notes |
 | v2.0 | user | view detailed information of a specific anime | can find out more about that anime series |
 | v2.0 | user | be able to select a watchlist from my list of watchlist to use | can stay focus on working on one watchlist |
 | v2.0 | user | delete watchlist that I no longer needs | can keep my list of watchlist organized and up-to-date |
-| v2.0 | translator | estimate the time needed to translate a script | better manage my time |
-| v2.0 | user | search for a specific anime with a keyword | find an anime series without remember its full title |
+| v2.0 | translator | estimate the time needed to translate a script | can better manage and plan my time |
+| v2.0 | user | search for a specific anime with a keyword | can find an anime series without remember its full title |
 | v2.0 | user | search for all anime in a genre | can find all similar types anime  |
+
+<br/>
 
 ## Appendix C: Non-Functional Requirements
 
-1.  It should work on major operating systems (OS) such as Windows and Linux that have `Java 11` installed.
+1.  The application should work on major operating systems (OS) such as Windows and Linux that have `Java 11` installed.
 2.  Users with fast typing speed should be able to accomplish tasks easily and faster than when they were using mouse.
-3.  Each command should be processed within 2 seconds.
+3.  The application should be easy to use with an accompanying User Guide and/or Developer Guide.
+4.  The application should utilize memory resources efficiently.
+5.  The application should be responsive.
+
+<br/>
+
+## Appendix D: Instructions for Manual Testing
+
+### D.1: Launch and Shutdown
+#### Initial Launch
+1.  Download the jar file and copy it into an empty folder.
+2.  Open a new command prompt or terminal and navigate to the directory containing `AniChan.jar`.
+3.  Enter the command `java -jar AniChan.jar` to launch **AniChan**.
+4.  { user setup process to be added }.
+
+> :bulb: This is what the input prompt means: **WORKSPACE-NAME (WATCHLIST-NAME) #>**
+
+#### Shutdown
+1.  To exit **AniChan**, enter the `exit` command.
+
+<br/>
+
+### D.2: Estimate the time needed to translate a script
+1.  Estimating the time needed to translate a script.
+    1.  Prerequisite: Have a non-empty `script.txt` file in the current workspace folder.
+        1.  Create a `.txt` file and name it "script" such that the file name with the file extension is `script.txt`, then fill it up with some content (i.e. random words and sentences).
+        2.  Go to the folder containing `AniChan.jar`.
+        3.  Open the `data` folder (if it does not exist, restart **AniChan**).
+        4.  In the `data` folder, find and open the folder named after the current workspace (if the input prompt shows `Default (myWatchlist) #>`, then look for the folder named "Default" as that is the current workspace name).
+        5.  Move `script.txt` into this folder (i.e. `data/Default/script.txt`).
+
+    2.  Test case: `estimate script.txt`. <br/>
+    Expected: 3 estimation timings are generated and printed.
+
+    3.  Test case: `estimate script.txt -wph 550`. <br/>
+    Expected: 1 estimation timing is generated and printed.
+    
+    4.  Other incorrect commands to try: 
+        1.  `estimate`.
+        2.  `estimate x` (where x is not a `.txt` file, or it is a file path).
+        3.  `estimate script.txt -wph y` (where y is a negative number or a word).
+
+> :memo: The file name (including extension) does not have to be `script.txt`, it is named as such for the convenience of testing.
+
+<br/>
+
+### D.3: Creating watchlist
+1.  Creating a watchlist with a unique name.
+    1.  Prerequisite: Watchlist list does not have a watchlist named "newWatchlist".
+    
+    2.  Test case: `watchlist -n newWatchlist`. <br/>
+    Expected: A empty watchlist named "newWatchlist" is created, and a message indicating the watchlist was created successfully is printed.
+        
+    3.  Other incorrect commands to try: 
+        1.  `watchlist -n`.
+        2.  `watchlist -n x` (where x is a non-unique watchlist name, exceeds 30 characters, or it contains non-alphanumeric characters).
+
+<br/>
+
+### D.4: Listing all watchlist(s)
+1.  Listing all created watchlist(s).
+    1.  Prerequisite: The watchlist list in the current workspace is not empty.
+    
+    2.  Test case: `watchlist -l` <br/>
+    Expected: The names of all watchlist in the current workspace is printed.
+    
+    3.  Other incorrect commands to try: 
+        1.  `watchlist -l x` (where x is any additional parameters or values).
+
+<br/>
+
+### D.5: Selecting a watchlist to be the new active watchlist
+1.  Selecting a watchlist to be the new active watchlist.
+    1.  Prerequisite: The watchlist list in the current workspace has at least 2 watchlist, and **the first watchlist is the active watchlist**.
+    
+    2.  Test case: `watchlist -s 2` <br/>
+    Expected: The second watchlist in the list becomes the new active watchlist, and a message indicating the name of the new active watchlist is printed.
+    
+    3.  Test case: `watchlist -s 1` <br/>
+    Expected: An error message indicating that the selected watchlist is already the active watchlist is printed.
+    
+    4.  Other incorrect commands to try: 
+        1.  `watchlist -s`
+        2.  `watchlist -s x` (where x is a negative number, a word, or an additional parameter).
+
+<br/>
+
+### D.6: Deleting a watchlist
+1.  Deleting a watchlist.
+    1.  Prerequisite: The watchlist list in the current workspace has at least 2 watchlist, and **the first watchlist is the active watchlist**.
+
+    2.  Test case: `watchlist -d 2` <br/>
+    Expected: The second watchlist in the list is deleted, and a message indicating the name of the deleted watchlist is printed.
+    
+    3.  Test case: `watchlist -d 1` <br/>
+    Expected: The first watchlist in the list is deleted, and a message indicating the name of the deleted watchlist, and the name of the new active watchlist is printed.
+    
+    4.  Other incorrect commands to try: 
+        1.  `watchlist -d`
+        2.  `watchlist -d x` (where x is a negative number, a word, or an additional parameter)
+        

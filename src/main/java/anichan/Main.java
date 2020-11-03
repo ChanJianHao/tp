@@ -30,16 +30,79 @@ public class Main {
     private User user;
 
     public Main() {
-        user = null;
         ui = new Ui();
         parser = new Parser();
         storageManager = new StorageManager(ANICHAN_STORAGE_DIRECTORY);
+        displayWelcome();
+        userSetup();
+        animeDataSetup();
+    }
 
-        LOGGER.log(Level.INFO, "AniChan started! Initializing...");
+    public void run() {
+        while (ui.hasNextLine(user)) {
+            try {
+                String userInput = ui.readUserInput();
+                Command command = parser.getCommand(userInput);
+                String commandOutput = command.execute(animeData, storageManager, user);
+                ui.printMessage(commandOutput);
 
-        // ========================== Initialize AniChan ==========================
+                if (command.getShouldExit()) {
+                    ui.printGoodbyeMessage(user.getHonorificName());
+                    break;
+                }
+            } catch (AniException exception) {
+                ui.printErrorMessage(exception.getMessage());
+            }
+        }
+    }
+
+    /**
+     * The starting point of AniChan.
+     *
+     * @param args are the arguments parsed in (if any)
+     */
+    public static void main(String[] args) {
+        new Main().run();
+    }
+
+    /**
+     * Prints the welcome message.
+     */
+    private void displayWelcome() {
         ui.printWelcomeMessage();
+        LOGGER.log(Level.INFO, "AniChan started! Initializing...");
         ui.printHorizontalLine();
+    }
+
+    /**
+     * Calls the relevant methods to load or setup the user and his workspaces.
+     */
+    private void userSetup() {
+        loadUserData();
+        ArrayList<Workspace> workspaceList = loadWorkspaceData();
+        if (user == null) {
+            newUserSetup();
+        }
+        workspaceSetup(workspaceList);
+        ui.printHorizontalLine();
+    }
+
+    /**
+     * Performs the loading of the source data, AnimeData.
+     */
+    private void animeDataSetup() {
+        try {
+            animeData = new AnimeData();
+        } catch (AniException exception) {
+            ui.printMessage("\tAnimeData: " + exception.getMessage());
+            LOGGER.log(Level.WARNING, "Exception: " + exception.getMessage());
+        }
+    }
+
+    /**
+     * Loads existing user data (if any).
+     */
+    private void loadUserData() {
         try {
             user = storageManager.loadUser();
             ui.printMessage("User: Loaded successfully.");
@@ -48,63 +111,69 @@ public class Main {
             ui.printMessage("User: " + exception.getMessage());
             LOGGER.log(Level.WARNING, "Exception: " + exception.getMessage());
         }
+    }
 
+    /**
+     * Loads existing workspace data (if any).
+     *
+     * @return list of Workspace objects
+     */
+    private ArrayList<Workspace> loadWorkspaceData() {
         ArrayList<Workspace> workspaceList = new ArrayList<>();
         String[] workspaceNameList = storageManager.retrieveWorkspaceList();
         for (String workspaceName : workspaceNameList) {
             ui.printMessage("Workspace \"" + workspaceName + "\":");
 
-            ArrayList<Watchlist> watchlistList = new ArrayList<>();
-            try {
-                String loadWatchlistResult = storageManager.loadWatchlistList(workspaceName, watchlistList);
-                ui.printMessage("\tWatchlist: " + loadWatchlistResult);
-                LOGGER.log(Level.INFO, "Loaded watchlist(s) " + loadWatchlistResult + " from storage");
-            } catch (AniException exception) {
-                ui.printMessage("\tWatchlist: " + exception.getMessage());
-                LOGGER.log(Level.WARNING, "Exception: " + exception.getMessage());
-            }
+            ArrayList<Watchlist> watchlistList = loadWatchlistData(workspaceName);
+            Bookmark bookmark = loadBookmarkData(workspaceName);
 
-            Bookmark bookmark = new Bookmark();
-            try {
-                String loadBookmarkResult = storageManager.loadBookmark(workspaceName, bookmark);
-                ui.printMessage("\tBookmark:  " + loadBookmarkResult);
-                LOGGER.log(Level.INFO, "Loaded bookmark " + loadBookmarkResult + " from storage");
-            } catch (AniException exception) {
-                ui.printMessage("\tBookmark:  " + exception.getMessage());
-                LOGGER.log(Level.WARNING, "Exception: " + exception.getMessage());
+            if (watchlistList.size() == 0) {
+                watchlistList.add(new Watchlist("Default"));
             }
-
             Workspace workspace = new Workspace(workspaceName, watchlistList, bookmark);
             workspaceList.add(workspace);
         }
-        ui.printHorizontalLine();
+        return workspaceList;
+    }
 
-        // ========================== New User Setup ==========================
-
-        if (user == null) {
-            newUserSetup();
-        }
-
-        // ========================== Workspace Setup ==========================
-
-        workspaceSetup(workspaceList);
-
-        // ========================== Watchlist Setup ==========================
-
-        Workspace activeWorkspace = user.getActiveWorkspace();
-        ArrayList<Watchlist> watchlistList = activeWorkspace.getWatchlistList();
-        if (watchlistList.size() == 0) {
-            watchlistList.add(new Watchlist("Default"));
-        }
-        activeWorkspace.setActiveWatchlist(watchlistList.get(0));
-
-        // ========================== AnimeDate Setup ==========================
+    /**
+     * Loads existing watchlist data for the workspace (if any).
+     *
+     * @param workspaceName the workspace to retrieve watchlist data from
+     * @return all watchlist created for that workspace
+     */
+    private ArrayList<Watchlist> loadWatchlistData(String workspaceName) {
+        ArrayList<Watchlist> watchlistList = new ArrayList<>();
         try {
-            animeData = new AnimeData();
+            String loadWatchlistResult = storageManager.loadWatchlistList(workspaceName, watchlistList);
+            ui.printMessage("\tWatchlist: " + loadWatchlistResult);
+            LOGGER.log(Level.INFO, "Loaded watchlist(s) " + loadWatchlistResult + " from storage.");
         } catch (AniException exception) {
-            ui.printMessage("\tAnimeData: " + exception.getMessage());
+            ui.printMessage("\tWatchlist: " + exception.getMessage());
             LOGGER.log(Level.WARNING, "Exception: " + exception.getMessage());
         }
+
+        return watchlistList;
+    }
+
+    /**
+     * Loads existing bookmark data for the workspace (if any).
+     *
+     * @param workspaceName the workspace to retrieve watchlist data from
+     * @return all bookmark created for that workspace
+     */
+    private Bookmark loadBookmarkData(String workspaceName) {
+        Bookmark bookmark = new Bookmark();
+        try {
+            String loadBookmarkResult = storageManager.loadBookmark(workspaceName, bookmark);
+            ui.printMessage("\tBookmark:  " + loadBookmarkResult);
+            LOGGER.log(Level.INFO, "Loaded bookmark(s) " + loadBookmarkResult + " from storage.");
+        } catch (AniException exception) {
+            ui.printMessage("\tBookmark:  " + exception.getMessage());
+            LOGGER.log(Level.WARNING, "Exception: " + exception.getMessage());
+        }
+
+        return bookmark;
     }
 
     /**
@@ -133,6 +202,10 @@ public class Main {
                 LOGGER.log(Level.WARNING, "Exception: " + exception.getMessage());
             }
         }
+
+        Workspace activeWorkspace = user.getActiveWorkspace();
+        ArrayList<Watchlist> watchlistList = activeWorkspace.getWatchlistList();
+        activeWorkspace.setActiveWatchlist(watchlistList.get(0));
     }
 
     /**
@@ -153,27 +226,5 @@ public class Main {
                 LOGGER.log(Level.WARNING, "Exception: " + exception.getMessage());
             }
         }
-    }
-
-    public void run() {
-        while (ui.hasNextLine(user)) {
-            try {
-                String userInput = ui.readUserInput();
-                Command command = parser.getCommand(userInput);
-                String commandOutput = command.execute(animeData, storageManager, user);
-                ui.printMessage(commandOutput);
-
-                if (command.getShouldExit()) {
-                    ui.printGoodbyeMessage(user.getHonorificName());
-                    break;
-                }
-            } catch (AniException exception) {
-                ui.printErrorMessage(exception.getMessage());
-            }
-        }
-    }
-
-    public static void main(String[] args) {
-        new Main().run();
     }
 }

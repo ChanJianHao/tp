@@ -31,17 +31,4 @@ public class Note {
         return note;
     }
 
-    /**
-     * Construct the note list using the note id and the note.
-     *
-     * @return note list
-     */
-    @Override
-    public String toString() {
-        String result = "";
-        for (int i = 0; i < notes.size(); i++) {
-            result += notes.get(i) + System.lineSeparator();
-        }
-        return result;
-    }
 }

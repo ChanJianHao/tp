@@ -123,7 +123,7 @@ public class BookmarkStorage extends Storage {
                 }
             }
 
-            bookmark.addAnimeBookmarkEpisode(bookmarkIndex, bookmarkEpisode, note);
+            bookmark.addAnimeBookmark(bookmarkIndex, bookmarkEpisode, note);
         }
 
         if (hasCorruptedBookmark) {
