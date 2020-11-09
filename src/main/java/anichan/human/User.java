@@ -110,7 +110,7 @@ public class User extends Human {
     }
 
     /**
-     * Get Workspace ArrayList which the User manages.
+     * Gets Workspace ArrayList which the User manages.
      *
      * @return Workspace ArrayList
      */
@@ -140,7 +140,7 @@ public class User extends Human {
     }
 
     /**
-     * Get the current Workspace User is working on.
+     * Gets the current Workspace User is working on.
      *
      * @return active Workspace which the User is using
      */
@@ -169,9 +169,9 @@ public class User extends Human {
     }
 
     /**
-     * Gets total number of workspace(s) the User have.
+     * Gets total number of workspace(s) the User owns.
      *
-     * @return size of Workspace(s) the User have
+     * @return size of Workspace(s) the User owns
      */
     public int getTotalWorkspaces() {
         return workspaceList.size();

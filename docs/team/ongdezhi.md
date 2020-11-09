@@ -40,7 +40,6 @@
 *   **Team-based Tasks**
     *   Helped to organize the classes into packages: [#63](https://github.com/AY2021S1-CS2113T-F12-2/tp/pull/63).
     *   Increased code coverage: [#98](https://github.com/AY2021S1-CS2113T-F12-2/tp/pull/98), [#139](https://github.com/AY2021S1-CS2113T-F12-2/tp/pull/139), [#140](https://github.com/AY2021S1-CS2113T-F12-2/tp/pull/140).
-    *   Fixed bugs: [#158](https://github.com/AY2021S1-CS2113T-F12-2/tp/pull/158).
     *   Contributed to User Guide formatting: [#199](https://github.com/AY2021S1-CS2113T-F12-2/tp/pull/199), [#226](https://github.com/AY2021S1-CS2113T-F12-2/tp/pull/226).
 
 *   **Beyond Project Team Tasks**

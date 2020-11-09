@@ -711,7 +711,7 @@ Triple Fromage Cheesecake (Default) #> OOPS!!! Watchlist command has too much pa
 
 Triple Fromage Cheesecake (Default) #> OOPS!!! Watchlist name should not exceed 30 characters!
 
-Triple Fromage Cheesecake (Default) #> OOPS!!! Watchlist name is used already!
+Triple Fromage Cheesecake (Default) #> OOPS!!! This watchlist name is not unique!
 
 Triple Fromage Cheesecake (Default) #> OOPS!!! Watchlist name cannot be empty!
 
@@ -1200,5 +1200,19 @@ abc3 (Default) #> Currently, you have 7 workspace(s):
 5. abc3
 6. abc7
 7. abc8
+
+abc3 (Default) #> Successfully added new workspace: hello dave
+
+abc3 (Default) #> OOPS!!! Workspace with similar name found!
+
+abc3 (Default) #> Currently, you have 8 workspace(s):
+1. RED VELVET Crumblesss
+2. COOKIES N CREME CH33SECAKE
+3. APPLES ORANGES OREOS PANCAKESS
+4. Triple Fromage Cheesecake
+5. abc3
+6. abc7
+7. abc8
+8. hello dave
 
 abc3 (Default) #> Sayonara Abec Steiner 77th-chan!

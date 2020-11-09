@@ -28,7 +28,7 @@ public class WatchlistCommand extends Command {
 
     private static final String INVALID_PARAMETER_ERROR = "Watchlist command only accepts the parameters: "
                                                           + "-n, -l, -s, and -d.";
-    private static final String WATCHLIST_NAME_IS_NOT_UNIQUE_ERROR = "Watchlist name is used already!";
+    private static final String WATCHLIST_NAME_IS_NOT_UNIQUE_ERROR = "This watchlist name is not unique!";
     private static final String INVALID_WATCHLIST_INDEX_ERROR = "This is not a valid watchlist index.";
     private static final String CANNOT_SELECT_ACTIVE_WATCHLIST_ERROR = "You cannot select the active watchlist..";
     private static final String CANNOT_DELETE_LAST_WATCHLIST_ERROR = "You cannot delete the last watchlist!";

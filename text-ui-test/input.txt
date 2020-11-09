@@ -445,4 +445,7 @@ workspace -d abc6
 workspace -l
 workspace -s abc4
 workspace -l
+workspace -n hello dave
+workspace -n hello DAVE
+workspace -l
 exit

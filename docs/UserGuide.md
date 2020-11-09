@@ -9,15 +9,15 @@
 ## Table of Contents
 1.  [Introduction](#1-introduction)
 <br/>&nbsp;1.1 [Purpose](#11-purpose)
-<br/>&nbsp;1.2 [Using this guide](#12-using-this-guide)
+<br/>&nbsp;1.2 [Using this Guide](#12-using-this-guide)
 
 2.  [Quick Start](#2-quick-start)
 
 3.  [Features](#3-features)
 <br/>&nbsp;3.1 [View the help](#31-view-the-help)
 <br/>&nbsp;3.2 [Estimate time need to translate the script](#32-estimate-time-needed-to-translate-the-script)
-<br/>&nbsp;3.3 [Browse through all anime](#33-browse-through-anime)
-<br/>&nbsp;3.4 [Search](#34-search-for-anime)
+<br/>&nbsp;3.3 [Browse through all anime](#33-browse-through-all-anime)
+<br/>&nbsp;3.4 [Search for anime](#34-search-for-anime)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1 [Search by anime title](#341-search-by-anime-title)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.2 [Search by genre](#342-search-by-genre)
 <br/>&nbsp;3.5 [View the information of an anime](#35-view-the-information-of-an-anime)
@@ -27,8 +27,8 @@
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.6.3 [List workspaces](#363-list-workspaces)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.6.4 [Delete workspace](#364-delete-workspace)
 <br/>&nbsp;3.7 [Watchlist management](#37-watchlist-management)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.7.1 [Create a new watchlist](#371-create-new-watchlist)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.7.2 [List all created watchlist(s)](#372-list-all-created-watchlists)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.7.1 [Create new watchlist](#371-create-new-watchlist)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.7.2 [List all watchlist(s)](#372-list-all-watchlists)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.7.3 [Select a watchlist to use](#373-select-a-watchlist-to-use)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.7.4 [Delete a watchlist](#374-delete-a-watchlist)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.7.5 [Add an anime to the current watchlist](#375-add-an-anime-to-the-current-watchlist)
@@ -55,15 +55,15 @@
 
 **Welcome to AniChan!**
 
-AniChan is a free desktop command-line application aimed to improve the efficiency of anime translators. With AniChan, translators could manage their time more effectively by identifying the time needed to translate a script. Moreover, AniChan comes with management features such as workspace, watchlist and bookmark that can help them stay organized and focused on their work.
+**AniChan** is a free desktop command-line application aimed to improve the efficiency of anime translators. With AniChan, translators could manage their time more effectively by identifying the time needed to translate a script. Moreover, **AniChan** comes with management features such as workspace, watchlist and bookmark that can help them stay organized and focused on their work.
 
-AniChan can also be used on all major operating systems such as Windows and Linux. You can refer to the [Quick Start](#2-quick-start) guide located below for more information on getting your journey started with AniChan!
+**AniChan** can also be used on all major operating systems such as Windows and Linux. You can refer to the [Quick Start](#2-quick-start) guide located below for more information on getting your journey started with **AniChan**!
 
 ### 1.1 Purpose
 
-This guide provides you with in-depth information on setting up AniChan and how to use the various features offered.
+This guide provides you with in-depth information on setting up **AniChan** and how to use the various features offered.
 
-### 1.2 Using this guide
+### 1.2 Using this Guide
 
 Along the way you might encounter several icons. These icons will provide you with different types of information that you may find useful.
 
@@ -80,7 +80,7 @@ Lastly, text that is blue like this [example](#12-using-this-guide), are clickab
 ## 2. Quick Start
 
 1.  Ensure that you have Java `11` or above installed.
-2.  Download the latest version of **AniChan** from [here](https://github.com/AY2021S1-CS2113T-F12-2/tp/releases/tag/V2.0).
+2.  Download the latest version of **AniChan** from [here](https://github.com/AY2021S1-CS2113T-F12-2/tp/releases/tag/V2.1).
 3.  Copy the file to the folder you want to use as the home folder for **AniChan**.
 4.  Open **command prompt** or **terminal** and change directory into the folder. Run `java -jar AniChan.jar`.
 5.  You will be first greeted by the **command prompt** for your name and gender as shown below.
@@ -112,8 +112,8 @@ E.g. Both `browse -s name -p 2` and `browse -p 2 -s name` gives the same result,
 
 <br/>
 
-> :bulb: AniChan's Input Prompt: 
-> <br/> <br/> ![AniChan's Input Prompt](images/AniChan-Input-Prompt.png) <br/> *Figure 2: AniChan's Input Prompt*
+> :bulb: **AniChan**'s Input Prompt: 
+> <br/> <br/> ![AniChan's Input Prompt](images/AniChan-Input-Prompt.png) <br/> *Figure 2: **AniChan**'s Input Prompt*
 
 <br/>
 
@@ -166,7 +166,7 @@ You would need 2 hour(s) 58 minute(s).
 
 <br/>
 
-### 3.3 Browse through anime
+### 3.3 Browse through all anime
 
 This command provides a realistic **browsing** experience as it first splits the list of all available anime series into pages. You will then be able to ‘flip’ through these pages providing a useful way to get a quick overview of all the different anime and find interesting ones.
 
@@ -339,7 +339,7 @@ Successfully added new workspace: Crispy Donuts Studio
 
 Switches your currently active workspace.
 
-> :memo: As you may create multiple workspaces to organize your translation work, this command allows you to switch between them. A workspace named `Default` is created when you run AniChan for the first time.
+> :memo: As you may create multiple workspaces to organize your translation work, this command allows you to switch between them. A workspace named `Default` is created when you run **AniChan** for the first time.
 
 Format: `workspace -s <NAME>`
 
@@ -427,7 +427,7 @@ Watchlist "Adventure Anime" has been created successfully!
 
 <br/>
 
-#### 3.7.2 List all created watchlist(s)
+#### 3.7.2 List all watchlist(s)
 
 List all watchlist(s) in the current workspace.
 
@@ -475,7 +475,7 @@ Format: `watchlist -d <WATCHLIST_ID>`
 
 > :bulb: Deletion only works when you have at least two watchlist in the current workspace.
 
-> :warning: If you delete the active watchlist, then the watchlist whose index is 1 in the list after the deletion will become the new active watchlist.
+> :warning: If you delete the active watchlist, then the watchlist whose index is 1 in the list after the deletion will become the new active watchlist (it will also print an additional line indicating that the active watchlist has changed, as shown in the example below).
 
 <br/>
 
@@ -746,7 +746,7 @@ In the folder where **AniChan** is launched, there will be a `data` folder which
 
 *   User data will be stored in `data/user.txt`.
 *   Watchlist(s) data will be stored in `data/<WORKSPACE-NAME>/watchlist.txt`. For example, if "AniTranslator" is the name of your workspace, then the watchlist data can be found in `data/AniTranslator/watchlist.txt`.
-*   Bookmark(s) data will also be stored in the same location as watchlist data, `data/WORKSPACE-NAME/bookmark.txt`.
+*   Bookmark(s) data will also be stored in the same location as watchlist data, `data/<WORKSPACE-NAME>/bookmark.txt`.
 
 ![Data Loaded on Startup](images/Data-Loaded-On-Startup.png) <br/> 
 *Figure 4: Example of Data Loaded On Startup*
@@ -775,7 +775,7 @@ In the folder where **AniChan** is launched, there will be a `data` folder which
 
 | Feature                                      | Command                                                 |
 | -------------------------------------------- | ------------------------------------------------------- |
-| Help                                         | `help`                                                  |
+| Help                                         | `help [COMMAND_TYPE]`                                                  |
 | Estimate time needed to translate the script | `estimate <SCRIPT_FILE_NAME> [-wph WORDS_PER_HOUR]`     |
 | Browse                                       | `browse [-s SORT_OPTION] [-p PAGE_NO.] [-o SORT_ORDER]` |
 | Search by title                              | `search -n <SEARCH_TERM>`                               |

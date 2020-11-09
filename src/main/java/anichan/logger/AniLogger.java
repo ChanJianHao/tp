@@ -45,7 +45,7 @@ public class AniLogger {
     }
 
     /**
-     * Adds Handler for console logging.
+     * Adds handler for console logging.
      *
      * @param logger logger object with console handler
      */
@@ -71,7 +71,7 @@ public class AniLogger {
     }
 
     /**
-     * Adds Handler for file logging.
+     * Adds handler for file logging.
      *
      * @param logger logger object with file handler
      */

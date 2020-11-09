@@ -12,7 +12,9 @@
     <br/>&nbsp;1.1 [Purpose](#11-purpose)
     <br/>&nbsp;1.2 [Using this Guide](#12-using-this-guide)
 
-2.  [Setting up](#2-setting-up)
+2.  [Setting Up](#2-setting-up)
+    <br/>&nbsp;2.1 [Setting up the project in your computer](#21-setting-up-the-project-in-your-computer)
+    <br/>&nbsp;2.2 [Before writing code](#22-before-writing-code) 
 
 3.  [Design](#3-design)
     <br/>&nbsp;3.1  [Architecture](#31-architecture)
@@ -55,7 +57,7 @@
 
 **Welcome to AniChan!**
 
-**AniChan** is a free desktop command-line application aimed to improve the efficiency of anime translators. With AniChan, translators could manage and plan their time more effectively by identifying the time needed to translate a script. Moreover, **AniChan** comes with management features such as workspace, watchlist and bookmark that can help them stay organized and focused on their work.
+**AniChan** is a free desktop command-line application aimed to improve the efficiency of anime translators. With **AniChan**, translators could manage and plan their time more effectively by identifying the time needed to translate a script. Moreover, **AniChan** comes with management features such as workspace, watchlist and bookmark that can help them stay organized and focused on their work.
 
 **AniChan** is written in **Java 11** and uses the Object-Oriented Programming (OOP) paradigm which provides us with means to structure a software program into organized and reusable pieces of codes, making it more efficient for future improvements and revisions.
 
@@ -176,7 +178,7 @@ The rest of **AniChan** consists of 6 components:
 
 Below are some example sequence diagrams to help illustrate the general program flow and how the different objects interact with each other.
 
-The first sequence diagram below shows the program flow of starting AniChan as an existing user.
+The first sequence diagram below shows the program flow of starting **AniChan** as an existing user.
 ![Starting Sequence Diagram](images/Starting-Sequence-Diagram.png) <br/>
 *Figure 2: Starting Up Sequence Diagram*
 
@@ -1002,8 +1004,8 @@ Notes for anime:
 
 **Step 10:** The user executes `bookmark 1 -r 1` command to remove a note from the bookmark entry. `Bookmark#removeNote()` will remove the note ID 1 from the first bookmark entry. The resulting state of the remove note command will look exactly the same to the state before the note was added.
 
-![Bookmark State After Edit Episode Diagram](images/Bookmark-After-Step7.png) <br/>
-*Figure 35: Bookmark Entries After Edit Episode*
+![Bookmark State After Remove Note](images/Bookmark-After-Step7.png) <br/>
+*Figure 35: Bookmark Entries After Remove Note*
 
 <br/>
 
@@ -1215,8 +1217,8 @@ If you wish to add new checks, simply add the check file with a filename `check-
 3.  Enter the command `java -jar AniChan.jar` to launch **AniChan**.
 4.  Program will prompt for `Name` and `Gender` of user, thereafter **AniChan** will be ready for use.
 
-> :bulb: AniChan's Input Prompt: 
-> <br/> <br/> ![AniChan's Input Prompt](images/AniChan-Input-Prompt.png) <br/> *Figure 36: AniChan's Input Prompt*
+> :bulb: **AniChan**'s Input Prompt: 
+> <br/> <br/> ![AniChan's Input Prompt](images/AniChan-Input-Prompt.png) <br/> *Figure 36: **AniChan**'s Input Prompt*
 
 #### Shutdown
 
@@ -1400,11 +1402,10 @@ If you wish to add new checks, simply add the check file with a filename `check-
     
     2.  Test case: `watchlist -n newWatchlist`. <br/>
     Expected: A empty watchlist named "newWatchlist" is created, and a message indicating the watchlist was created successfully is printed. 
-    If the current workspace has a watchlist named "newWatchlist" created already, then, a message indicating the watchlist creation failed due to a non-unique watchlist name provided is printed.
-        
+
     3.  Other incorrect commands to try: 
         1.  `watchlist -n`.
-        2.  `watchlist -n x` (where x is watchlist name that exceeds 30 characters, contains non-alphanumeric characters, or contain spaces only).
+        2.  `watchlist -n x` (where x is a watchlist name that is not unique in the current workspace, exceeds 30 characters, contains non-alphanumeric characters, or contain spaces only).
 
 <br/>
 
